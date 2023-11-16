@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <title>Backend Accounts</title>
+    <meta charset="utf-8">
+    <meta name="description" content="museum egyptian civilization">
+    <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body class="body">
+    <div class="backend-logo"><img src="assets/logo.png" class="backend-logo-img"></div>
+    <div class="backend-navbar">
+        <a href="index.html">Frontend</a>
+        <a href="backend.html">Dashboard</a>
+        <a href="backend-donations.html">Donations</a>
+        <a href="backend-tours.html">Tours</a>
+        <a href="backend-shop.html">Shop</a>
+        <a href="backend-exhibitions.html">Exhibitions</a>
+        <a href="backend-newsletter.html">Newsletter</a>
+        <a href="backend-accounts.html">Accounts</a>
+        <a href="backend-contactus.html">Enquiries</a>
+        <a href="backend-reviews.html">Reviews</a>
+    </div>
+
+    <div class="backend-div">
+        <p class="backend-titles">Manage Accounts
+        <p>
+
+        <form method="get" action="/backend-success.html">
+            <table class="accounts-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Yassin Bedier</td>
+                    <td>yassin.bedier@gmail.com</td>
+                    <td>01550447237</td>
+                    <td>Male</td>
+                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Mehareel Philip</td>
+                    <td>mera.philip@outlook.com</td>
+                    <td>01091827384</td>
+                    <td>Female</td>
+                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Fatma Milad</td>
+                    <td>fatma.milad@hotmail.com</td>
+                    <td>01283748910</td>
+                    <td>Female</td>
+                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Maya Alam</td>
+                    <td>maya.alam06@gmail.com</td>
+                    <td>0102050350</td>
+                    <td>Female</td>
+                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Ali Farag</td>
+                    <td>eliofarag696@gmail.com</td>
+                    <td>01114444100</td>
+                    <td>Male</td>
+                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Mohamed Ehab</td>
+                    <td>moh.ehab@icloud.com</td>
+                    <td>0123232399</td>
+                    <td>Male</td>
+                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Shahd Seif</td>
+                    <td>shahd.seif@aol.com</td>
+                    <td>01198799234</td>
+                    <td>Female</td>
+                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                </tr>
+            </table>
+
+        </form>
+
+        <p class="backend-titles">Manually Create New Account
+        <p>
+
+        <form class="faq-form" method="get" action="/backend-submitted.html">
+            <b><label class="faq-form-label" for="name">Name:</label></b>
+            <br>
+            <input class="faq-form-input" type="text" id="name" name="name" required>
+            <br><br>
+
+            <b><label class="faq-form-label" for="email">Email:</label></b>
+            <br>
+            <input class="faq-form-input" type="email" id="email" name="email" required>
+            <br><br>
+
+            <b><label class="faq-form-label" for="phone">Phone:</label></b>
+            <br>
+            <input class="faq-form-input" type="tel" id="phone" name="phone" required>
+            <br><br>
+
+            <b><label class="faq-form-label" for="gender">Gender:</label></b>
+            <br>
+            <br>
+            <input class="faq-form-label" type="radio" id="male" name="gender" value="Male" required> <label
+                class="faq-form-label" for="gender">Male</label>
+            <br>
+            <br>
+            <input class="faq-form-label" type="radio" id="female" name="gender" value="Female" required> <label
+                class="faq-form-label" for="gender">Female</label>
+            <br><br>
+
+            <button class="form-button" type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

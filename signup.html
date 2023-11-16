@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+    <meta name="description" content="museum egyptian civilization">
+    <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body class="body">
+    <div class="login-box">
+        <div class="logo"><img src="assets/logo.png"></div>
+        <p class="login-title">Sign Up</p>
+        <form method="get" action="/myaccount.html">
+            <b><label class="login-label" for="username">Name:</label></b>
+            <input class="login-input" type="text" id="username" name="username" required>
+
+            <b><label class="login-label" for="email">Email:</label></b>
+            <input class="login-input" type="email" id="email" name="email" required>
+
+            <b><label class="login-label" for="phone">Phone:</label></b>
+            <input class="login-input" type="tel" id="phone" name="phone" required>
+
+            <b><label class="login-label" for="age">Age:</label></b>
+            <input class="login-input" type="number" min="1" max="99" id="age" name="age" required>
+
+            <b><label class="faq-form-label" for="gender">Gender:</label></b>
+            <br>
+            <br>
+            <br>
+            <input class="faq-form-label" type="radio" id="male" name="gender" value="Male" required> <label
+                class="faq-form-label" for="gender">Male</label>
+            <br>
+            <br>
+            <input class="faq-form-label" type="radio" id="female" name="gender" value="Female" required> <label
+                class="faq-form-label" for="gender">Female</label>
+            <br><br>
+
+            <b><label class="login-label" for="password">Password:</label></b>
+            <input class="login-input" type="password" id="password" name="password" required>
+
+            <button class="login-button" type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>

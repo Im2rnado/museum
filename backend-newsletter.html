@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <title>Backend Newsletter</title>
+    <meta charset="utf-8">
+    <meta name="description" content="museum egyptian civilization">
+    <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body class="body">
+    <div class="backend-logo"><img src="assets/logo.png" class="backend-logo-img"></div>
+    <div class="backend-navbar">
+        <a href="index.html">Frontend</a>
+        <a href="backend.html">Dashboard</a>
+        <a href="backend-donations.html">Donations</a>
+        <a href="backend-tours.html">Tours</a>
+        <a href="backend-shop.html">Shop</a>
+        <a href="backend-exhibitions.html">Exhibitions</a>
+        <a href="backend-newsletter.html">Newsletter</a>
+        <a href="backend-accounts.html">Accounts</a>
+        <a href="backend-contactus.html">Enquiries</a>
+        <a href="backend-reviews.html">Reviews</a>
+    </div>
+
+    <div class="backend-div">
+        <p class="backend-titles">Send Newsletter
+        <p>
+
+        <form class="faq-form" method="get" action="/backend-submitted.html">
+
+            <b><label class="faq-form-label" for="title">Title:</label></b>
+            <br>
+            <input class="faq-form-input" type="text" id="title" name="title" required>
+            <br><br>
+
+            <b><label class="faq-form-label" for="content">Content:</label></b>
+            <br>
+            <textarea class="faq-form-question" id="content" name="content" rows="5" required></textarea>
+            <br><br>
+
+            <b><label class="faq-form-label" for="images">Images (optional):</label></b>
+            <br>
+            <input class="faq-content" type="file" id="images" name="images">
+            <br>
+            <br>
+
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+
+        <p class="backend-titles">Past Newsletters
+        <p>
+
+        <form method="get" action="/backend-newsletter.html">
+            <table class="accounts-table">
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Date Sent</th>
+                    <th>Has Image?</th>
+                    <th>Users Received</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Halloween Offer</td>
+                    <td>This halloween we are doing a 40% offer on all tours! Make sure to come with all of your loved
+                        ones before the offer ends.</td>
+                    <td>25/10/2023</td>
+                    <td>Yes</td>
+                    <td>2</td>
+                    <td><button class="contact-button-yes" type="submit">Resend</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Free Palestine</td>
+                    <td>This weekend we are planning a protest to sypmathize with Gaza from the terrorist Zionist
+                        Occupation. We are also going to donate all money from tickets for the next month to the Red
+                        Crescent,</td>
+                    <td>30/10/2023</td>
+                    <td>No</td>
+                    <td>4</td>
+                    <td><button class="contact-button-yes" type="submit">Resend</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>New Monuments</td>
+                    <td>We have just added more than 50 new monuments to the museum! All the thanks to our great
+                        president his exellency Abdelfattah El Sisi</td>
+                    <td>11/11/2023</td>
+                    <td>Yes</td>
+                    <td>4</td>
+                    <td><button class="contact-button-yes" type="submit">Resend</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <p class="backend-titles">Users Subscribed
+        <p>
+
+        <form method="get" action="/backend-newsletter.html">
+            <table class="accounts-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date Subscribed</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Yassin Bedier</td>
+                    <td>yassin.bedier@gmail.com</td>
+                    <td>21/01/2023</td>
+                    <td><button class="contact-button-no" type="submit">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Karim Sherif</td>
+                    <td>karim.sherif@outlook.com</td>
+                    <td>10/11/2023</td>
+                    <td><button class="contact-button-no" type="submit">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Youssef Farghaly</td>
+                    <td>fergie696@hotmail.com</td>
+                    <td>29/10/2023</td>
+                    <td><button class="contact-button-no" type="submit">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Maya Alam</td>
+                    <td>maya.alam06@gmail.com</td>
+                    <td>09/07/2023</td>
+                    <td><button class="contact-button-no" type="submit">Remove</button></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
