@@ -618,3 +618,69 @@ footer input {
   text-align: center;
   text-decoration: none;
 }
+
+.myaccount {
+  float: left;
+  margin-left: 2%;
+}
+
+.myaccount-table {
+  height: 50%;
+  margin-bottom: 4%;
+  margin-top: 20px;
+  border: 2px solid #111739;
+  padding: auto;
+}
+
+.myaccount-table th {
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: justify;
+  background-color: #F6EECF;
+  border: 2px solid #111739;
+}
+
+.myaccount-table td {
+  overflow: auto;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #111739;
+  text-align: left;
+  color: #F6EECF;
+  border: 2px solid #111739;
+  padding: 8px;
+}
+
+.previous-stuff {
+  float: right;
+  margin-right: 5%;
+}
+
+.previous-stuff-table {
+  height: 50%;
+  margin-bottom: 4%;
+  margin-top: 20px;
+  border: 2px solid #111739;
+  padding: auto;
+}
+
+.previous-stuff-table th {
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: justify;
+  background-color: #F6EECF;
+  border: 2px solid #111739;
+}
+
+.previous-stuff-table td {
+  overflow: auto;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #111739;
+  text-align: left;
+  color: #F6EECF;
+  border: 2px solid #111739;
+  padding: 8px;
+}

@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Founders</title>
+    <title>My Account</title>
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
@@ -74,58 +74,90 @@
         </div>
     </div>
 
-    <div class="founders">
+    <div class="myaccount">
         <b>
-            <p class="maintitle">Our Founders</p>
+            <p class="maintitle">My Account</p>
         </b>
 
-        <p class="blog-names">- President Abdel Fattah El-Sisi<br>
-            - Ministry of Tourism & Antiques
-        </p>
+    <form action="myaccount.html" method="get ">
+        <table class="myaccount-table">
+            <tr>
+                <th>Name</th>
+                <td>Yassin Bedier</td>
+                <td><input type="text" id="name" name="name"></td>
+                <td><button class="contact-button-yes" type="submit">Update Name</button></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>yassin.bedier@gmail.com</td>
+                <td><input type="email" id="email" name="email"></td>
+                <td><button class="contact-button-yes" type="submit">Update Email</button></td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>01550447237</td>
+                <td><input type="tel" id="phone" name="phone"></td>
+                <td><button class="contact-button-yes" type="submit">Update Phone Number</button></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>Male</td>
+                <td><input class="faq-form-label" type="radio" id="male" name="gender" value="Male" checked> <label
+                        class="faq-form-label" for="gender">Male</label>
+                    <input class="faq-form-label" type="radio" id="female" name="gender" value="Female"> <label
+                        class="faq-form-label" for="gender">Female</label>
+                    <br><br>
+                </td>
+                <td><button class="contact-button-yes" type="submit">Update Gender</button></td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>16</td>
+                <td><input type="number" min="1" max="90" id="age" name="age"></td>
+                <td><button class="contact-button-yes" type="submit">Update Age</button></td>
+            </tr>
+        </table>
+    </form>
     </div>
 
-    <div class="partners">
+    <div class="previous-stuff">
         <b>
-            <p class="maintitle">Our Partners</p>
-            <br>
+            <p class="maintitle">Previous Tours</p>
         </b>
 
-        <p><a class="blog-names" target="_blank" href="https://unesco.org">- UNESCO</a><br>
-            <a class="blog-names" target="_blank" href="http://www.moc.gov.eg/en/home/">- Ministry of Culture</a>
-        </p>
-    </div>
+    <table class="previous-stuff-table">
+        <tr>
+            <th>Tour ID</th>
+            <th>Date Went</th>
+            <th>Time</th>
+            <th>Tickets Bought</th>
+        </tr>
+        <tr>
+            <td>69</td>
+            <td>21/01/2023</td>
+            <td>3pm-6pm</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>05/05/2023</td>
+            <td>3pm-6pm</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>210</td>
+            <td>09/07/2023</td>
+            <td>11am-2pm</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>214</td>
+            <td>11/11/2023</td>
+            <td>1pm-4pm</td>
+            <td>1</td>
+        </tr>
+    </table>
 
-    <div class="inquire-partner">
-        <br>
-        <b>
-            <p class="maintitle">Inquire about Partnership</p>
-            <br>
-        </b>
-
-        <form id="apply" class="faq-form" method="get" action="submitted.html">
-            <b><label class="faq-form-label" for="name">Name:</label></b>
-            <br>
-            <input class="faq-form-input" type="text" id="name" name="name" required>
-            <br><br>
-
-            <b><label class="faq-form-label" for="email">Email:</label></b>
-            <br>
-            <input class="faq-form-input" type="email" id="email" name="email" required>
-            <br><br>
-
-            <b><label class="faq-form-label" for="org">Organization Name:</label></b>
-            <br>
-            <input class="faq-form-input" type="text" id="org" name="org" required>
-            <br><br>
-
-            <b><label class="faq-form-label" for="comment">Enquiry (optional):</label></b>
-            <br>
-            <textarea class="faq-form-question" id="comment" name="comment" rows="5"></textarea>
-            <br><br>
-
-            <button class="form-button" type="submit">Submit</button>
-
-        </form>
     </div>
 
     <footer>
