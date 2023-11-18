@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Booking Policy</title>
+    <title>Book Tickets</title>
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
@@ -66,67 +66,11 @@
     </div>
 
     <b>
-        <p class="maintitle">Booking Policy</p>
-    </b>
-
-    <ul class="faq-ul">
-        <p class="faq-sub">Cancellation and Refunds</p>
-        <li class="faq-li">
-            <p class="faq-content">Cancellations or changes to reservations can be made up to 24 hours before the
-                scheduled visit.</p>
-        </li class="faq-li">
-        <li class="faq-li">
-            <p class="faq-content">Refunds will not be issued for cancellations made less than 24 hours before the
-                scheduled visit</p>
-        </li class="faq-li">
-        <br>
-
-        <p class="faq-sub">Children and Age Restrictions</p>
-        <li class="faq-li">
-            <p class="faq-content">Children under a certain 2 years old may enter the musuem for free or when
-                accompanied by a paying adult.</p>
-        </li class="faq-li">
-        <li class="faq-li">
-            <p class="faq-content">Age restrictions may apply to certain exhibits or events; please check individual
-                exhibit guidelines.</p>
-        </li class="faq-li">
-        <br>
-
-        <p class="faq-sub">Photography and Filming</p>
-        <li class="faq-li">
-            <p class="faq-content">Photography and filming is restricted in certain areas within the museum.</p>
-        </li class="faq-li">
-        <li class="faq-li">
-            <p class="faq-content">If you do not comply with the restrictions, we have the right to terminate your
-                ticket and kick you out without a refund.</p>
-        </li class="faq-li">
-        <br>
-
-        <p class="faq-sub">Security Checks</p>
-        <li class="faq-li">
-            <p class="faq-content">All visitors may be subject to security checks upon entry. Large bags, backpacks, or
-                prohibited items may not be allowed inside the museum.</p>
-        </li class="faq-li">
-        <br>
-
-        <p class="faq-sub">Code of Conduct</p>
-        <li class="faq-li">
-            <p class="faq-content">Disruptive behavior, vandalism, or any form of disrespect towards staff will not be
-                tolerated.</p>
-        </li class="faq-li">
-        <li class="faq-li">
-            <p class="faq-content">Visitors must also comply to the cultural dress code. Any inappropriate clothing
-                isn't allowed inside the museum.</p>
-        </li class="faq-li">
-        <br>
-    </ul>
-
-    <b>
-        <p class="maintitle">Have any question about our Policies?</p>
+        <p class="maintitle">Book a Ticket</p>
         <br>
     </b>
 
-    <form class="faq-form" method="get" action="submitted.html">
+    <form id="apply" class="faq-form" method="get" action="pay-ticket.html">
         <b><label class="faq-form-label" for="name">Name:</label></b>
         <br>
         <input class="faq-form-input" type="text" id="name" name="name" required>
@@ -137,12 +81,43 @@
         <input class="faq-form-input" type="email" id="email" name="email" required>
         <br><br>
 
-        <b><label class="faq-form-label" for="question">Question:</label></b>
+        <b><label class="faq-form-label" for="phone">Phone Number:</label></b>
         <br>
-        <textarea class="faq-form-question" id="question" name="question" rows="5" required></textarea>
+        <input class="faq-form-input" type="tel" id="phone" name="phone" required>
         <br><br>
 
-        <button class="form-button" type="submit">Submit</button>
+        <b><label class="faq-form-label" for="country">Nationality:</label></b>
+        <br>
+        <select class="faq-form-input" id="country" name="country" required>
+            <option class="faq-content" value="egyptian">Egyptian</option>
+            <option class="faq-content" value="arab">Arab</option>
+            <option class="faq-content" value="other">Other</option>
+        </select>
+        <br><br>
+
+        <b><label class="faq-form-label" for="type">Ticket Type:</label></b>
+        <br>
+        <select class="faq-form-input" id="type" name="type" required>
+            <option class="faq-content" value="full">Full Tour (3 hours)</option>
+            <option class="faq-content" value="concert">Partial Tour (1.5 hours)</option>
+        </select>
+        <br><br>
+
+        <b><label class="faq-form-label" for="date">Date and Time:</label></b>
+        <br>
+        <input class="faq-form-input" type="datetime-local" id="date" name="date" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="amount">Amount of tickets:</label></b>
+        <br>
+        <input class="faq-form-input" type="number" min="1" max="20" id="amount" name="amount" required>
+        <br><br>
+
+        <input class="faq-form-label" type="checkbox" name="student" value="yes">
+        <label for="" class="login-label">Are you a student?</label>
+        <br>
+
+        <button class="form-button" type="submit">Continue to Payment</button>
 
     </form>
 
