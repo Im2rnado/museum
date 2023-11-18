@@ -684,3 +684,23 @@ footer input {
   border: 2px solid #111739;
   padding: 8px;
 }
+
+.reserve {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  float: inline-end;
+  width: 400px;
+  overflow: hidden;
+  color: #F6EECF;
+  background-color: #1C2452;
+  margin-bottom: 40px;
+}
+
+.center-text {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  border: 0.5px#1C2452 dotted;
+  text-align: justify;
+  padding: 20px;
+  margin-bottom: 0px;
+}
