@@ -704,3 +704,25 @@ footer input {
   padding: 20px;
   margin-bottom: 0px;
 }
+
+.tbl {
+  width: 90%;
+  align-content: justify;
+  margin-left: 50pt;
+  padding: 10px;
+  border: 5px #1C2452 solid;
+}
+
+.tbl td {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 0.5px #1C2452 solid;
+}
+
+.tbl h2 {
+  text-align: center;
+}
+
+.tbl .bio {
+  font-size: large;
+  text-align: center;
+}
