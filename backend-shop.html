@@ -1,0 +1,238 @@
+<html>
+
+<head>
+    <title>Backend Donations</title>
+    <meta charset="utf-8">
+    <meta name="description" content="museum egyptian civilization">
+    <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body class="body">
+    <div class="backend-logo"><img src="assets/logo.png" class="backend-logo-img"></div>
+    <div class="backend-navbar">
+        <a href="index.html">
+            < Frontend</a>
+                <a href="backend.html">Dashboard</a>
+                <a href="backend-donations.html">Donations</a>
+                <a href="backend-bookings.html">Bookings</a>
+                <a href="backend-shop.html">Shop</a>
+                <a href="backend-events.html">Events</a>
+                <a href="backend-newsletter.html">Newsletter</a>
+                <a href="backend-accounts.html">Accounts</a>
+                <a href="backend-contactus.html">Enquiries</a>
+                <a href="backend-reviews.html">Reviews</a>
+    </div>
+
+    <p class="backend-titles">Shop
+    <p>
+
+    <table class="events-table">
+        <tr>
+            <th>Order ID</th>
+            <th>Product ID</th>
+            <th>Date & Time</th>
+            <th>Customer</th>
+            <th>Quantity</th>
+            <th>Color</th>
+            <th>Total</th>
+            <th>Address</th>
+            <th>Payment Status</th>
+            <th>Order Status</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>t100</td>
+            <td>09/08/2023 <br> 07:31</td>
+            <td>Kanye West</td>
+            <td>1</td>
+            <td>Grey</td>
+            <td>L.E. 3,500</td>
+            <td>USA</td>
+            <td><select name="Paystatus" id="Paystatus">
+                    <option>Payment Done</option>
+                    <option>Payment Error</option>
+                    <option>Proceeding Payment</option>
+                    <option>Refunded</option>
+                </select></td>
+            <td><select name="Orderstatus" id="Orderstatus">
+                    <option>Delivered</option>
+                    <option>Shipped</option>
+                    <option>Cancelled</option>
+                    <option>Waiting for Payment</option>
+                    <option>Waiting for Pick Up</option>
+                </select></td>
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>t200</td>
+            <td>05/07/2023 <br> 07:31</td>
+            <td>Yassin Bedier</td>
+            <td>1</td>
+            <td>Black</td>
+            <td>L.E. 5,000</td>
+            <td>Egypt</td>
+            <td><select name="Paystatus" id="Paystatus">
+                    <option>Payment Done</option>
+                    <option>Payment Error</option>
+                    <option>Proceeding Payment</option>
+                    <option>Refunded</option>
+                </select></td>
+            <td><select name="Orderstatus" id="Orderstatus">
+                    <option>Delivered</option>
+                    <option>Shipped</option>
+                    <option>Cancelled</option>
+                    <option>Waiting for Payment</option>
+                    <option>Waiting for Pick Up</option>
+                </select></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>c100</td>
+            <td>04/07/2023 <br> 05:31</td>
+            <td>Giorgio Armani</td>
+            <td>2</td>
+            <td>Red</td>
+            <td>L.E. 7,500</td>
+            <td>Italy</td>
+            <td><select name="Paystatus" id="Paystatus">
+                    <option>Payment Done</option>
+                    <option>Payment Error</option>
+                    <option>Proceeding Payment</option>
+                    <option>Refunded</option>
+                </select></td>
+            <td><select name="Orderstatus" id="Orderstatus">
+                    <option>Delivered</option>
+                    <option>Shipped</option>
+                    <option>Cancelled</option>
+                    <option>Waiting for Payment</option>
+                    <option>Waiting for Pick Up</option>
+                </select></td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>c300</td>
+            <td>05/07/2023 <br> 09:31</td>
+            <td>Thierry Hermes</td>
+            <td>1</td>
+            <td>Blue</td>
+            <td>L.E. 1,000</td>
+            <td>Germany</td>
+            <td><select name="Paystatus" id="Paystatus">
+                    <option>Payment Done</option>
+                    <option>Payment Error</option>
+                    <option>Proceeding Payment</option>
+                    <option>Refunded</option>
+                </select></td>
+            <td><select name="Orderstatus" id="Orderstatus">
+                    <option>Delivered</option>
+                    <option>Shipped</option>
+                    <option>Cancelled</option>
+                    <option>Waiting for Payment</option>
+                    <option>Waiting for Pick Up</option>
+                </select></td>
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>j100</td>
+            <td>04/06/2023 <br> 07:41</td>
+            <td>Virgil Abloh</td>
+            <td>1</td>
+            <td>White</td>
+            <td>L.E. 5,000</td>
+            <td>USA</td>
+            <td><select name="Paystatus" id="Paystatus">
+                    <option>Payment Done</option>
+                    <option>Payment Error</option>
+                    <option>Proceeding Payment</option>
+                    <option>Refunded</option>
+                </select></td>
+            <td><select name="Orderstatus" id="Orderstatus">
+                    <option>Delivered</option>
+                    <option>Shipped</option>
+                    <option>Cancelled</option>
+                    <option>Waiting for Payment</option>
+                    <option>Waiting for Pick Up</option>
+                </select></td>
+
+        </tr>
+    </table>
+    <br>
+
+    <div class="backend-order-chart">
+        <img src="assets/orderschart.png">
+        <img src="assets/sales.png">
+    </div>
+
+    <p class="backend-titles">Create Order Manually
+    <p>
+
+    <form class="faq-form" method="get" action="backend-submitted.html">
+        <b><label class="faq-form-label" for="name">Customer Name:</label></b>
+        <br>
+        <input class="faq-form-input" type="text" id="name" name="name" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="id">Product ID:</label></b>
+        <br>
+        <input class="faq-form-input" type="text" id="id" name="id" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="date">Date and Time:</label></b>
+        <br>
+        <input class="faq-form-input" type="datetime-local" id="date" name="date" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="quantity">Quantity:</label></b>
+        <br>
+        <input class="faq-form-input" type="number" min="1" max="10" id="quantity" name="quantity" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="color">Color:</label></b>
+        <br>
+        <input class="faq-form-input" type="color" id="color" name="color" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="amount">Total Price:</label></b>
+        <br>
+        <input class="faq-form-input" type="text" id="amount" name="amount" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="country">Address:</label></b>
+        <br>
+        <input class="faq-form-input" type="text" id="country" name="country" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="status">Payment Status:</label></b>
+        <br>
+        <select class="faq-form-input" id="status" name="status" required>
+            <option class="faq-content" value="done">Payment Done</option>
+            <option class="faq-content" value="error">Payment Error</option>
+            <option class="faq-content" value="proceeding">Proceeding Payment</option>
+            <option class="faq-content" value="proceeding">Refunded</option>
+        </select>
+        <br><br>
+
+        <b><label class="faq-form-label" for="status">Order Status:</label></b>
+        <br>
+        <select class="faq-form-input" id="status" name="status" required>
+            <option class="faq-content" value="delivered">Delivered</option>
+            <option class="faq-content" value="shipped">Shipped</option>
+            <option class="faq-content" value="cancelled">Cancelled</option>
+            <option class="faq-content" value="proceeding">Waiting for Payment</option>
+            <option class="faq-content" value="pickup">Waiting for Pickup</option>
+        </select>
+        <br><br>
+
+        <button class="form-button" type="submit">Submit</button>
+        </table>
+    </form>
+</body>
+
+</html>
