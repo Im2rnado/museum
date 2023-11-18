@@ -1,757 +1,756 @@
 /* Navbar container */
 .navbar {
-    overflow: hidden;
-    background-color: black;
-    font-family: Arial;
-    border: 2px black solid;
-    margin-bottom: 10px;
+  overflow: hidden;
+  background-color: #111739;
+  font-family: Arial;
+  border: 2px #F6EECF solid;
+  margin-bottom: 10px;
 }
 
 p {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 hr {
-    color: black;
-    background-color: black;
-    height: 1px;
-    border: none;
+  color: black;
+  background-color: black;
+  height: 1px;
+  width: 80%;
+  border: none;
 }
 
 .navbar a {
-    font-weight: bold;
-    float: left;
-    font-size: 16px;
-    color: #F6EECF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border: 1px #F6EECF solid;
+  font-weight: bold;
+  float: left;
+  font-size: 16px;
+  color: #F6EECF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px #F6EECF solid;
 }
 
 
 .dropdown {
-    border: 1px #F6EECF solid;
-    float: left;
-    overflow: hidden;
+  border: 1px #F6EECF solid;
+  float: left;
+  overflow: hidden;
 }
 
 .dropdown .dropbtn {
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: #F6EECF;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #F6EECF;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
 }
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    border: 1px black solid;
-    background-color: #F6EECF;
-    color: black;
+  background-color: #F6EECF;
+  color: #111739;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
+  display: none;
+  position: absolute;
+  background-color: #111739;
+  min-width: 160px;
 }
 
 .dropdown-content a {
-    float: none;
-    color: #F6EECF;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    background-color: black;
+  float: none;
+  color: #F6EECF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: #111739;
 }
 
 .dropdown-content a:hover {
-    border: 1px black solid;
-    color: black;
-    background-color: #F6EECF
+  color: #111739;
+  background-color: #F6EECF
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .body {
-    background-color: #F6EECF;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logohead {
-    border: 2px #F6EECF solid;
-    padding-top: 5px;
-    background-color: black;
+  border: 2px #F6EECF solid;
+  padding-top: 5px;
+  background-color: #111739;
 }
 
 .logohead img {
-    width: 170px;
-    height: 70px;
+  width: 170px;
+  height: 70px;
 }
 
 footer {
-    border: 2px #F6EECF solid;
-    background-color: black;
-    font-size: x-large;
-    padding: 10px;
-    text-align: center;
-    height: 240px;
-    clear: both;
-    color: #F6EECF;
-    font-family: Arial, Helvetica, sans-serif;
+  border: 2px #F6EECF solid;
+  background-color: #111739;
+  font-size: x-large;
+  padding: 10px;
+  text-align: center;
+  height: 240px;
+  clear: both;
+  color: #F6EECF;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer input {
-    width: 500px;
-    height: 50px;
-    font-size: 20px;
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
 }
 
 .subscribe {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 .subscribe-button {
-    width: 175px;
-    height: 50px;
-    background-color: rgb(243, 236, 223);
+  width: 175px;
+  height: 50px;
+  background-color: rgb(243, 236, 223);
 }
 
 .iframe {
-    width: 90%;
+  width: 90%;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .maintitle {
-    text-decoration: underline;
-    margin-bottom: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .maindesc {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    display: flex;
-    justify-content: center;
-    padding-left: 2%;
-    padding-right: 2%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  display: flex;
+  justify-content: center;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .h2c {
-    text-align: center;
+  text-align: center;
 }
 
 .header {
-    text-align: left;
+  text-align: left;
 }
 
 .images {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .image {
-    width: 25%;
-    margin: 10px;
+  width: 25%;
+  margin: 10px;
 }
 
 .signup-container {
-    float: right;
+  float: right;
 }
 
 .blocksub {
-    text-align: left;
-    font-weight: 400;
+  text-align: left;
+  font-weight: 400;
 }
 
 .about {
-    font-size: xx-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: center;
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: center;
 }
 
 .about-sub {
-    font-style: oblique;
-    font-size: xx-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    padding-left: 5%;
-    text-align: left;
+  font-style: oblique;
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  padding-left: 5%;
+  text-align: left;
 }
 
 .about-content {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: justify;
-    padding-left: 5%;
-    padding-right: 5%;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .table {
-    margin-top: 50px;
-    margin-right: 5%;
-    margin-bottom: 50px;
+  margin-top: 50px;
+  margin-right: 5%;
+  margin-bottom: 50px;
 }
 
 .socials {
-    padding-left: 18%;
+  padding-left: 18%;
 }
 
 .socials-img {
-    width: 18%;
+  width: 18%;
 }
 
 .history-table {
-    border-spacing: 0 50px;
+  border-spacing: 0 50px;
 }
 
 .history-image {
-    padding-left: 5%;
-    width: 85%
+  padding-left: 5%;
+  width: 85%
 }
 
 .faq-content {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: justify;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: justify;
 }
 
 .faq-li {
-    padding-left: 1%;
+  padding-left: 1%;
 }
 
 .faq-ul {
-    margin-left: 15%;
-    margin-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .faq-sub {
-    font-style: oblique;
-    font-size: x-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: left;
+  font-style: oblique;
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: left;
 }
 
 .faq-form {
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: black;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 2%;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #111739;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2%;
 }
 
 .faq-form-label {
-    float: left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    display: block;
-    margin-bottom: 8px;
-    color: #F6EECF;
+  float: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 8px;
+  color: #F6EECF;
 }
 
 .faq-form-input {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
 }
 
 .faq-form-question {
-    width: 100%;
-    margin-bottom: 10px
+  width: 100%;
+  margin-bottom: 10px
 }
 
 .form-button {
-    font-size: medium;
-    width: 150px;
-    background-color: #F6EECF;
-    color: black;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+  font-size: medium;
+  width: 150px;
+  background-color: #F6EECF;
+  color: #111739;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .form-button:hover {
-    background-color: black;
-    color: #F6EECF;
+  background-color: black;
+  color: #F6EECF;
 }
 
 .success {
-    font-style: oblique;
-    font-size: x-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: center;
+  font-style: oblique;
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: center;
 }
 
 .success-img {
-    width: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 17px;
+  width: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17px;
 }
 
 .links {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .login-box {
-    width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: black;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #111739;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
 }
 
 .login-title {
-    font-size: xx-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    color: #F6EECF;
-    text-align: center;
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: #F6EECF;
+  text-align: center;
 }
 
 .login-label {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    display: block;
-    margin-bottom: 8px;
-    color: #F6EECF;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 8px;
+  color: #F6EECF;
 }
 
 .login-input {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
 }
 
 .login-button {
-    font-size: medium;
-    width: 150px;
-    background-color: #F6EECF;
-    color: black;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+  font-size: medium;
+  width: 150px;
+  background-color: #F6EECF;
+  color: #111739;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .login-button:hover {
-    background-color: black;
-    color: #F6EECF;
+  background-color: black;
+  color: #F6EECF;
 }
 
 .backend-navbar {
-    overflow: hidden;
-    background-color: black;
-    font-family: Arial;
-    margin-top: 120px;
-    margin-left: 5px;
-    width: 120px;
-    height: 480px;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
+  overflow: hidden;
+  background-color: #111739;
+  font-family: Arial;
+  margin-top: 120px;
+  margin-left: 5px;
+  width: 120px;
+  height: 480px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Links inside the navbar */
 .backend-navbar a {
-    border: 1px #F6EECF solid;
-    font-weight: bold;
-    float: left;
-    font-size: 16px;
-    color: #F6EECF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    width: 100%;
-    box-sizing: border-box;
+  border: 1px #F6EECF solid;
+  font-weight: bold;
+  float: left;
+  font-size: 16px;
+  color: #F6EECF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Add a black background color to navbar links on hover */
 .backend-navbar a:hover {
-    background-color: #F6EECF;
-    color: black;
+  background-color: #F6EECF;
+  color: #111739;
 }
 
 .backend-logo {
-    position: fixed;
-    width: 120px;
-    margin-left: 5px;
+  position: fixed;
+  width: 120px;
+  margin-left: 5px;
 }
 
 .backend-logo-img {
-    width: 120px;
+  width: 120px;
 }
 
 .backend-div {
-    display: grid;
+  display: grid;
 }
 
 .backend-titles {
-    margin-top: 40px;
-    margin-bottom: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .accounts-table {
-    width: 50%;
-    height: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid black;
-    padding: auto;
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #111739;
+  padding: auto;
 }
 
 .accounts-table th {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: justify;
-    background-color: #F6EECF;
-    border: 2px solid black;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: justify;
+  background-color: #F6EECF;
+  border: 2px solid #111739;
 }
 
 .accounts-table td {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
-    text-align: left;
-    color: #F6EECF;
-    border: 2px solid black;
-    padding: 8px;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #111739;
+  text-align: left;
+  color: #F6EECF;
+  border: 2px solid #111739;
+  padding: 8px;
 }
 
 .accounts-button {
-    font-size: medium;
-    width: 100%;
-    background-color: black;
-    color: red;
-    border: none;
-    cursor: pointer;
+  font-size: medium;
+  width: 100%;
+  background-color: #111739;
+  color: red;
+  border: none;
+  cursor: pointer;
 }
 
 .accounts-button:hover {
-    background-color: red;
-    color: black;
+  background-color: red;
+  color: #111739;
 }
 
 .backend-table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .backend-table td {
-    padding: 10px;
+  padding: 10px;
 }
 
 .backend-image {
-    padding-left: 5%;
-    width: 100%
+  padding-left: 5%;
+  width: 100%
 }
 
 .contact-button-yes {
-    font-size: medium;
-    width: 100%;
-    background-color: black;
-    color: greenyellow;
-    border: none;
-    cursor: pointer;
+  font-size: medium;
+  width: 100%;
+  background-color: #111739;
+  color: greenyellow;
+  border: none;
+  cursor: pointer;
 }
 
 .contact-button-yes:hover {
-    background-color: greenyellow;
-    color: black;
+  background-color: greenyellow;
+  color: #111739;
 }
 
 .contact-button-no {
-    font-size: medium;
-    width: 100%;
-    background-color: black;
-    color: red;
-    border: none;
-    cursor: pointer;
+  font-size: medium;
+  width: 100%;
+  background-color: #111739;
+  color: red;
+  border: none;
+  cursor: pointer;
 }
 
 .contact-button-no:hover {
-    background-color: red;
-    color: black;
+  background-color: red;
+  color: #111739;
 }
 
 .careers-table {
-    width: 50%;
-    height: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    border: 2px solid black;
-    padding: auto;
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 2px solid #111739;
+  padding: auto;
 }
 
 .careers-table th {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: justify;
-    background-color: #F6EECF;
-    border: 2px solid black;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: justify;
+  background-color: #F6EECF;
+  border: 2px solid #111739;
 }
 
 .careers-table td {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
-    text-align: left;
-    color: #F6EECF;
-    border: 2px solid black;
-    padding: 8px;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #111739;
+  text-align: left;
+  color: #F6EECF;
+  border: 2px solid #111739;
+  padding: 8px;
 }
 
 .location-address {
-    float: left;
-    margin-left: 12%;
-    margin-top: 10px;
+  float: left;
+  margin-left: 12%;
+  margin-top: 10px;
 }
 
 .location-map {
-    width: 50%;
-    height: 60%;
-    float: right;
-    margin-top: 10px;
-    margin-right: 5%;
+  width: 50%;
+  height: 60%;
+  float: right;
+  margin-top: 10px;
+  margin-right: 5%;
 }
 
 .location-map .iframe {
-    width: 80%;
-    height: 60%;
-    float: right;
-    margin-top: 10px;
-    margin-right: 5%;
+  width: 80%;
+  height: 60%;
+  float: right;
+  margin-top: 10px;
+  margin-right: 5%;
 }
 
 .location-map .maintitle {
-    margin-bottom: 10px;
-    margin-left: 5%
+  margin-bottom: 10px;
+  margin-left: 5%
 }
 
 .founders {
-    float: left;
-    padding-left: 20%;
+  float: left;
+  padding-left: 20%;
 }
 
 .partners {
-    float: right;
-    padding-right: 25%;
+  float: right;
+  padding-right: 25%;
 }
 
 .inquire-partner {
-    float: none;
-    clear: both;
-    padding-right: 30px;
+  float: none;
+  clear: both;
+  padding-right: 30px;
 }
 
 .center-image {
-    width: 130%;
-    margin: 20px 0;
+  width: 130%;
+  margin: 20px 0;
 }
 
 .blog-td {
-    border: 2px black solid;
+  border: 2px #111739 solid;
 }
 
 .blog-table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    margin-bottom: 50px;
-    border-spacing: 10px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin-bottom: 50px;
+  border-spacing: 10px 0px;
 }
 
 .blog-names {
-    font-size: xx-large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: center;
-    text-decoration: none;
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: center;
+  text-decoration: none;
 }
 
 .myaccount {
-    float: left;
-    margin-left: 2%;
+  float: left;
+  margin-left: 2%;
 }
 
 .myaccount-table {
-    height: 50%;
-    margin-bottom: 4%;
-    margin-top: 20px;
-    border: 2px solid black;
-    padding: auto;
+  height: 50%;
+  margin-bottom: 4%;
+  margin-top: 20px;
+  border: 2px solid #111739;
+  padding: auto;
 }
 
 .myaccount-table th {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: justify;
-    background-color: #F6EECF;
-    border: 2px solid black;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: justify;
+  background-color: #F6EECF;
+  border: 2px solid #111739;
 }
 
 .myaccount-table td {
-    overflow: auto;
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
-    text-align: left;
-    color: #F6EECF;
-    border: 2px solid black;
-    padding: 8px;
+  overflow: auto;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #111739;
+  text-align: left;
+  color: #F6EECF;
+  border: 2px solid #111739;
+  padding: 8px;
 }
 
 .previous-stuff {
-    float: right;
-    margin-right: 5%;
+  float: right;
+  margin-right: 5%;
 }
 
 .previous-stuff-table {
-    height: 50%;
-    margin-bottom: 4%;
-    margin-top: 20px;
-    border: 2px solid black;
-    padding: auto;
+  height: 50%;
+  margin-bottom: 4%;
+  margin-top: 20px;
+  border: 2px solid #111739;
+  padding: auto;
 }
 
 .previous-stuff-table th {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: justify;
-    background-color: #F6EECF;
-    border: 2px solid black;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: justify;
+  background-color: #F6EECF;
+  border: 2px solid #111739;
 }
 
 .previous-stuff-table td {
-    overflow: auto;
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
-    text-align: left;
-    color: #F6EECF;
-    border: 2px solid black;
-    padding: 8px;
+  overflow: auto;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #111739;
+  text-align: left;
+  color: #F6EECF;
+  border: 2px solid #111739;
+  padding: 8px;
 }
 
 .reserve {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-    float: inline-end;
-    width: 400px;
-    overflow: hidden;
-    color: #F6EECF;
-    background-color: black;
-    margin-bottom: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  float: inline-end;
+  width: 400px;
+  overflow: hidden;
+  color: #F6EECF;
+  background-color: #1C2452;
+  margin-bottom: 40px;
 }
 
 .center-text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-    border: 0.5pxblack dotted;
-    text-align: justify;
-    padding: 20px;
-    margin-bottom: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  border: 0.5px#1C2452 dotted;
+  text-align: justify;
+  padding: 20px;
+  margin-bottom: 0px;
 }
 
 .tbl {
-    width: 90%;
-    align-content: justify;
-    margin-left: 50pt;
-    padding: 10px;
-    border: 5px black solid;
+  width: 90%;
+  align-content: justify;
+  margin-left: 50pt;
+  padding: 10px;
+  border: 5px #1C2452 solid;
 }
 
 .tbl td {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: 0.5px black solid;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 0.5px #1C2452 solid;
 }
 
 .tbl h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .tbl .bio {
-    font-size: large;
-    text-align: center;
+  font-size: large;
+  text-align: center;
 }
 
 .events-table {
-    width: 80%;
-    margin-left: 15%;
-    margin-right: auto;
-    border: 2px solid black;
-    padding: auto;
+  width: 80%;
+  margin-left: 15%;
+  margin-right: auto;
+  border: 2px solid #111739;
+  padding: auto;
 }
 
 .events-table th {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: justify;
-    background-color: #F6EECF;
-    border: 2px solid black;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: justify;
+  background-color: #F6EECF;
+  border: 2px solid #111739;
 }
 
 .events-table td {
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
-    text-align: left;
-    color: #F6EECF;
-    border: 2px solid black;
-    padding: 8px;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #111739;
+  text-align: left;
+  color: #F6EECF;
+  border: 2px solid #111739;
+  padding: 8px;
 }
