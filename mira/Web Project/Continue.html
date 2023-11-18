@@ -1,0 +1,100 @@
+<!--Linked to Personal_Info_EC-->
+<html>
+    <head>
+        <title>Continue Form</title>
+        <link rel="stylesheet" type="text/css" href="Basic_css.css">
+        <div class="header">
+            <img id="logo" src="nmec-edited.png">
+            <div class="social_media">
+                <a href="https://www.facebook.com/nmec.gov.eg"><img src="facebook.png" alt="Facebook icon link"></a> 
+                <a href="https://www.instagram.com/nmecmuseum/?igshid=YmMyMTA2M2Y%3D"> <img src="instagram.png" alt="Instagram icon link"</a>
+                <a href="https://twitter.com/NMEC17?s=08"> <img src="twitter.png" alt="Twitter icon link"</a>
+                <a href="https://www.youtube.com/channel/UCgNlHKqoTF86baOI8xVl4eQ"> <img src="youtube.png" alt="Youtube icon link"</a>
+                </div>
+        </div>
+    </head>
+    <body>
+        <!--To be linked with the payment form-->
+        <form action="EC.html">
+            <table align="center" width="90%" height="70%" >
+                    <tr>
+                        <td colspan="3">
+                            <h1> Course Details </h1>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label> Group Choice :</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="Group 1" value="Group 1"> Group 1
+                            <input type="radio" name="Group 2" value="Group 2"> Group 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Telephone :</label>
+                        </td>
+                        <td>
+                            <textarea name="Telephone">01022334455</textarea>
+                        </td>
+                    </tr>
+                    <td>
+                        <label>Starting date :</label>
+                    </td>
+                    <td>
+                        <input type="start_date" name="start_date" value="start_Date">
+                    </td>
+                    <tr>
+                        <td>
+                            <label>Number of seats :</label>
+                        </td>
+                        <td>
+                            <input type="number" name="Tickets" min="1" max="10">
+                            <br> <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label> Select time of the day: </label>
+                        </td>
+                        <td>
+                            <input type="radio" name="Time" value="AM"> "AM"
+                            <input type="radio" name="Time" value="PM"> "PM"
+                            <input type="radio" name="Time" value="DUAL"> "Dual"
+                        </td>
+                    </tr>
+                    <tr align="justify">
+                        <td colspan="3">
+                            <input type="checkbox" name="Agree" value="Agree">
+                            I agree to the terms and conditions and the privacy policy
+                            <br>
+                            <input type="checkbox" name="Agree" value="Age">
+                            I will stick to the courses rules and regulations
+                            <br>
+                            <input type="checkbox" name="Agree" value="Data">
+                            Customer data privacy
+                            <br> <i>
+                                The personal data you provide is used to answer queries,
+                                <br> process requests
+                                or allow access to specific information.
+                                <br>You have the right to
+                                modify the information anytime.
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="right">
+                            <input  type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="right">
+                            <a href="EC.html"><button class="Reserve">Proceed to Payment</button></a>
+                        </td>
+                    </tr>
+            </table>
+        </form>
+    </body>
+</html>

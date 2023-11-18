@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="main.css">
+<html lang="en">
+<div class="logohead"><img src="assets/logo-new.png"><img src="assets/logo-new2.png"></div>
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="backend.html" class="active">Back End</a>
+    <div class="dropdown">
+        <button class="dropbtn">About
+        </button>
+        <div class="dropdown-content">
+            <a href="about.html">About Home</a>
+            <a href="history.html">Our History</a>
+            <a href="founders.html">Founders and Partners</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Visit
+        </button>
+        <div class="dropdown-content">
+            <a href="location.php">Our Location</a>
+            <a href="book_individual.php">Individual Booking</a>
+            <a href="book_agency.html">Tourism Agency</a>
+            <a href="book_offers.php">Offers & Promotions</a>
+            <a href="book_policy.html">Booking Policy</a>
+        </div>
+    </div>
+    <a href="donate.html" class="active2">Donate</a>
+    <div class="dropdown">
+        <button class="dropbtn">Events
+        </button>
+        <div class="dropdown-content">
+            <a href="calendar_events.html">Upcoming Events</a>
+            <a href="old_events.html">Previous Events</a>
+            <a href="host_event.html">Host an Event</a>
+        </div>
+    </div>
+
+    <div class="signup-container">
+        <a href="signup.html" class="active2">Signup</a>
+        <a href="login.html" class="active2">Login</a>
+    </div>
+</div>
+
+<head>
+    <link rel="stylesheet" href="main (2).css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifacts</title>
+    <style>
+        body {
+            font: Arial;
+            margin: 20px;
+        }
+
+        .artifact {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .artifact img {
+            width: 200px;
+            height: 200px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Most Famous Artifacts</h1>
+
+
+
+    <div class="artifact">
+        <table border="0" width="100%">
+            <tr>
+                <td>
+                    <h2>Coffin of King Ramses II</h2>
+                    <img src="coffin.jpeg" alt="Artifact 1">
+                </td>
+                <td width="50%">
+                    <p>The Coffin of King Ramses II, a
+                        regal masterpiece from 13th century BCE Egypt, adorned with intricate hieroglyphics and gold
+                        leaf,
+                        encapsulates the grandeur of Ramses the Great's
+                        reign and offers insights into ancient burial practices and cultural traditions.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="artifact" width="50%">
+        <table>
+            <tr>
+                <td>
+                    <h2>Royal mummy of Hatshepsut</h2>
+                    <img src="Hatshepsut.jpeg" alt="Artifact 2">
+                </td>
+                <td width="50%">
+                    <p>The Royal Mummy of Hatshepsut, an ancient Egyptian queen and pharaoh,
+                        represents a fascinating archaeological discovery showcasing the
+                        preserved remains of this influential female ruler.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <div class="artifact">
+        <table>
+            <tr>
+                <td>
+                    <h2>King Thutmose III Statue</h2>
+                    <img src="thutmos.jpeg" alt="Artifact 2">
+                </td>
+                <td width="50%">
+                    <p>The statue of King Thutmose III, an ancient Egyptian pharaoh,
+                        stands as a powerful testament to his reign,
+                        portraying the ruler's authority and significance in the rich history of Egypt.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Add more artifacts as needed -->
+
+    <h2>Feedback Form</h2>
+
+    <form id="feedback-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="feedback">Feedback/Comments:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+</body>
+
+</html>

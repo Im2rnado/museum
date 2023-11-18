@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Reviews</title>
+    <title>Reserve Training Center</title>
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
@@ -75,52 +75,11 @@
     </div>
 
     <b>
-        <p class="maintitle">Reviews</p>
-    </b>
-
-    <form method="get" action="#apply">
-        <table class="careers-table">
-            <tr>
-                <th>Name</th>
-                <th>Rating</th>
-                <th>Comment</th>
-                <th>Date</th>
-            </tr>
-            <tr>
-                <td>Yassin Bedier</td>
-                <td>⭐⭐⭐⭐⭐</td>
-                <td>I loved the museum. It was great and it seems like the designs were inspired by Kanye West</td>
-                <td>21/01/2023</td>
-            </tr>
-            <tr>
-                <td>Maya Alam</td>
-                <td>⭐⭐⭐⭐</td>
-                <td>The artifacts were so good. Overall a great experience but the food at the cafe wasn't the best</td>
-                <td>09/07/2023</td>
-            </tr>
-            <tr>
-                <td>Mohamed Shabrawy</td>
-                <td>⭐⭐⭐⭐⭐</td>
-                <td><i>No comment</i></td>
-                <td>30/10/2023</td>
-            </tr>
-            <tr>
-                <td>Julia Fox</td>
-                <td>⭐⭐⭐</td>
-                <td>One of the worst museums i've ever been to. Almost everyone spoke this weird arabic language and I
-                    didn't understand anything. No one know who I was too so they didn't even try to make a special tour
-                    for me. SMH</td>
-                <td>02/11/2023</td>
-            </tr>
-        </table>
-    </form>
-
-    <b>
-        <p class="maintitle">Add a review</p>
+        <p class="maintitle">Personal Info</p>
         <br>
     </b>
 
-    <form id="apply" class="faq-form" method="get" action="submitted.html">
+    <form class="faq-form" method="get" action="reserve-continue.html">
         <b><label class="faq-form-label" for="name">Name:</label></b>
         <br>
         <input class="faq-form-input" type="text" id="name" name="name" required>
@@ -131,36 +90,47 @@
         <input class="faq-form-input" type="email" id="email" name="email" required>
         <br><br>
 
-        <b><label class="faq-form-label" for="rating">Rating:</label></b>
+        <b><label class="faq-form-label" for="age">Age:</label></b>
         <br>
-        <select class="faq-form-input" id="rating" name="rating" required>
-            <option class="faq-content" value="5">⭐⭐⭐⭐⭐</option>
-            <option class="faq-content" value="4">⭐⭐⭐⭐</option>
-            <option class="faq-content" value="3">⭐⭐⭐</option>
-            <option class="faq-content" value="2">⭐⭐</option>
-            <option class="faq-content" value="1">⭐</option>
+        <input class="faq-form-input" type="number" min="15" max="70" id="age" name="age" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="gender">Gender:</label></b>
+        <br>
+        <br>
+        <input class="faq-form-label" type="radio" id="male" name="gender" value="Male" required> <label
+            class="faq-form-label" for="gender">Male</label>
+        <br>
+        <br>
+        <input class="faq-form-label" type="radio" id="female" name="gender" value="Female" required> <label
+            class="faq-form-label" for="gender">Female</label>
+        <br><br><br>
+
+        <b><label class="faq-form-label" for="address">Address:</label></b>
+        <br>
+        <select class="faq-form-input" id="address" name="address" required>
+            <option class="faq-content" value="new_cairo">New Cairo</option>
+            <option class="faq-content" value="maadi">Maadi</option>
+            <option class="faq-content" value="zamalek">Zamalek</option>
+            <option class="faq-content" value="heliopolis">Heliopolis</option>
+            <option class="faq-content" value="sheikh_zayed" selected>Sheikh Zayed</option>
+            <option class="faq-content" value="garden_city">Garden City</option>
+            <option class="faq-content" value="alex">Alexandria</option>
+            <option class="faq-content" value="mansoura">Mansoura</option>
+            <option class="faq-content" value="other">Other</option>
         </select>
         <br><br>
 
-        <b><label class="faq-form-label" for="comment">Comment (optional):</label></b>
+        <input class="faq-form-label" type="checkbox" name="terms" value="agree">
+        <label for="" class="login-label">I agree to the Terms and Conditions of the Training Center.</label>
         <br>
-        <textarea class="faq-form-question" id="comment" name="comment" rows="5"></textarea>
-        <br><br>
 
-        <button class="form-button" type="submit">Submit</button>
+        <button class="form-button" type="submit">Continue</button>
+        <br>
+        <br>
+        <button class="contact-button-no" type="reset">Reset</button>
 
     </form>
-
-    <footer>
-        <form>Enter your email address to receive our newsletter
-            <input class="subscribe" type="email"><input class="subscribe-button" id="subscribe" type="button"
-                value="Subscribe">
-        </form>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.96467018058!2d31.248246!3d30.00841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458476863e39e8f%3A0xc2e058446f8f145d!2sThe%20National%20Museum%20of%20Egyptian%20Civilization!5e0!3m2!1sen!2seg!4v1699299103548!5m2!1sen!2seg"
-            class="iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </footer>
 </body>
 
 </html>

@@ -1,0 +1,118 @@
+<!--Personal Info-->
+<!--To be linked initially when asked to register for the Education center-->
+<html>
+<title>Personal Info Form</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Basic_css.css">
+    <div class="header">
+        <img id="logo" src="nmec-edited.png">
+        <div class="social_media">
+            <a href="https://www.facebook.com/nmec.gov.eg"><img src="facebook.png" alt="Facebook icon link"></a> 
+            <a href="https://www.instagram.com/nmecmuseum/?igshid=YmMyMTA2M2Y%3D"> <img src="instagram.png" alt="Instagram icon link"</a>
+            <a href="https://twitter.com/NMEC17?s=08"> <img src="twitter.png" alt="Twitter icon link"</a>
+            <a href="https://www.youtube.com/channel/UCgNlHKqoTF86baOI8xVl4eQ"> <img src="youtube.png" alt="Youtube icon link"</a>
+            </div>
+    </div>
+    <br>
+</head>
+
+<body>
+    <form action="Continue.html">
+    <table align="center" width="90%" height="70%" >
+            <tr>
+                <td colspan="3">
+                    <h1> Personal Information </h1>
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label> Gender :</label>
+                </td>
+                <td>
+                    <input type="radio" name="Man" value="Man"> Male
+                    <input type="radio" name="Woman" value="Woman">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>First Name :</label>
+                </td>
+                <td>
+                    <input type="text" name="First_Name">
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <label>Last Name :</label>
+            </td>
+            <td>
+                <input type="text" name="Last_Name">
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    <label>Email :</label>
+                </td>
+                <td>
+                    <textarea name="Email_Address">someone@example.com</textarea>
+                </td>
+            </tr>
+            <td>
+                <label>Birthdate :</label>
+            </td>
+            <td>
+                <input type="date" name="date" value="Date"> Optional
+            </td>
+            <tr>
+                <td>
+                    <label>Address :</label>
+                </td>
+                <td>
+                    <select name="Address">
+                        <option value="Old_Cairo" selected>Old Cairo</option>
+                        <option value="New_Cairo">New Cairo</option>
+                        <option value="Maadi">Maadi</option>
+                        <option value="Mohandiseen">Mohandiseen</option>
+                        <option value="Heliopolis">Heliopolis</option>
+                        <option value="Sheikh Zayed">Sheikh Zayed</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br> <br>
+                </td>
+            </tr>
+            <tr align="justify">
+                <td colspan="3">
+                    <input type="checkbox" name="Agree" value="Agree">
+                    I agree to the terms and conditions and the privacy policy
+                    <br>
+                    <input type="checkbox" name="Agree" value="Age">
+                    I am at least 18 years old
+                    <br>
+                    <input type="checkbox" name="Agree" value="Data">
+                    Customer data privacy
+                    <br> <i>
+                        The personal data you provide is used to answer queries,
+                        <br> process requests
+                        or allow access to specific information.
+                        <br>You have the right to
+                        modify the information anytime.
+                    </i>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="right">
+                    <input  type="reset" value="Reset">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="right">
+                    <a href="Continue.html"><button class="Reserve">Continue</button></a>
+                </td>
+            </tr>
+    </table>
+</form>
+</body>
+
+</html>

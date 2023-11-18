@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>FAQ</title>
+    <title>Reserve Education Center</title>
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
@@ -75,80 +75,56 @@
     </div>
 
     <b>
-        <p class="maintitle">Frequently Asked Questions</p>
-    </b>
-
-    <ul class="faq-ul">
-        <p class="faq-sub">Where is The National Museum of Egyptian Civilization located?</p>
-        <li class="faq-li">
-            <p class="faq-content">It is located in Ein as Seirah, Old Cairo, Cairo</p>
-        </li class="faq-li">
-        <br>
-
-        <p class="faq-sub">What are the operating hours of the museum?</p>
-        <li class="faq-li">
-            <p class="faq-content">Saturday – Thursday from 9:00 AM – 5:00 PM
-                <br>
-                Friday from 9:00 AM – 5:00 PM
-            </p>
-        </li class="faq-li">
-        <br>
-
-        <p class="faq-sub">Is there a gift shop?</p>
-        <li class="faq-li">
-            <p class="faq-content">Yes, we have a gift shop where you can find unique souvenirs, books, and gifts
-                related to the museum's exhibits and themes.</p>
-        </li class="faq-li">
-        <br>
-
-        <p class="faq-sub">Is there a café or restaurant on-site?</p>
-        <li class="faq-li">
-            <p class="faq-content">Yes, we have a cafe where you can relax and enjoy refreshments.</p>
-        </li class="faq-li">
-        <br>
-
-        <p class="faq-sub">Is the museuem wheelchair accessible?</p>
-        <li class="faq-li">
-            <p class="faq-content">Yes, we strive to make our museum accessible to all visitors.</p>
-        </li class="faq-li">
-        <br>
-    </ul>
-
-    <b>
-        <p class="maintitle">Have Any Other Questions</p>
+        <p class="maintitle">Course Details</p>
         <br>
     </b>
 
-    <form class="faq-form" method="get" action="submitted.html">
-        <b><label class="faq-form-label" for="name">Name:</label></b>
+    <form class="faq-form" method="get" action="reserve-pay.html">
+        <b><label class="faq-form-label" for="group">Group Choice:</label></b>
         <br>
-        <input class="faq-form-input" type="text" id="name" name="name" required>
+        <br>
+        <input class="faq-form-label" type="radio" id="group1" name="group" value="group1" required> <label
+            class="faq-form-label" for="group">Group 1</label>
+        <br>
+        <br>
+        <input class="faq-form-label" type="radio" id="group2" name="group" value="group2" required> <label
+            class="faq-form-label" for="group">Group 2</label>
+        <br><br><br>
+
+        <b><label class="faq-form-label" for="phone">Phone Number:</label></b>
+        <br>
+        <input class="faq-form-input" type="tel" id="phone" name="phone" required>
         <br><br>
 
-        <b><label class="faq-form-label" for="email">Email:</label></b>
+        <b><label class="faq-form-label" for="date">Start Date:</label></b>
         <br>
-        <input class="faq-form-input" type="email" id="email" name="email" required>
+        <input class="faq-form-input" type="date" id="date" name="date" required>
         <br><br>
 
-        <b><label class="faq-form-label" for="question">Question:</label></b>
+        <b><label class="faq-form-label" for="seats">Number of seats:</label></b>
         <br>
-        <textarea class="faq-form-question" id="question" name="question" rows="5" required></textarea>
+        <input class="faq-form-input" type="number" min="1" max="3" id="seats" name="seats" required>
         <br><br>
 
-        <button class="form-button" type="submit">Submit</button>
+        <b><label class="faq-form-label" for="time">Time of the day:</label></b>
+        <br>
+        <select class="faq-form-input" id="time" name="time" required>
+            <option class="faq-content" value="am">AM</option>
+            <option class="faq-content" value="pm">PM</option>
+            <option class="faq-content" value="dual">Dual</option>
+        </select>
+        <br><br>
+
+        <input class="faq-form-label" type="checkbox" name="terms" value="agree">
+        <label for="" class="login-label">I agree to the Course regulations.</label>
+        <br>
+
+        <button class="form-button" type="submit">Procceed to Payment</button>
+        <br>
+        <br>
+        <button class="contact-button-no" type="reset">Reset</button>
 
     </form>
-
-    <footer>
-        <form>Enter your email address to receive our newsletter
-            <input class="subscribe" type="email"><input class="subscribe-button" id="subscribe" type="button"
-                value="Subscribe">
-        </form>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.96467018058!2d31.248246!3d30.00841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458476863e39e8f%3A0xc2e058446f8f145d!2sThe%20National%20Museum%20of%20Egyptian%20Civilization!5e0!3m2!1sen!2seg!4v1699299103548!5m2!1sen!2seg"
-            class="iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </footer>
 </body>
 
 </html>
