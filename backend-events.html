@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Backend Enquiries</title>
+    <title>Backend Events</title>
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
@@ -26,47 +26,62 @@
     </div>
 
     <div class="backend-div">
-        <p class="backend-titles">Enquiries
+        <p class="backend-titles">Events
         <p>
 
-        <form method="get" action="backend-contactus.html">
-            <table class="accounts-table">
+        <form method="get" action="backend-events.html">
+            <table class="events-table">
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
+                    <th>Organization Name</th>
+                    <th>Applier Name</th>
                     <th>Email</th>
-                    <th>Message</th>
-                    <th colspan="2">Respond</th>
+                    <th>Event Type</th>
+                    <th>Date</th>
+                    <th>Extra Info</th>
+                    <th colspan="2">Approve</th>
                 </tr>
                 <tr>
                     <td>1</td>
+                    <td>Waystar Royco</td>
                     <td>Yassin Bedier</td>
                     <td>yassin.bedier@gmail.com</td>
-                    <td>I wanted to know if the musuem is wheelchair friendly because I am slightly autistic</td>
+                    <td>Conference</td>
+                    <td>20/12/2023</td>
+                    <td>We want to host an event to announce Yassin Bedier as the new CEO.</td>
                     <td><button class="contact-button-yes" type="submit">Yes</button></td>
                     <td><button class="contact-button-no" type="submit">No</button></td>
                 </tr>
                 <tr>
                     <td>2</td>
+                    <td>Stark Industries</td>
                     <td>Karim Sherif</td>
                     <td>karim.sherif@outlook.com</td>
-                    <td>Does a baby under 6 months have to pay for a ticket?</td>
+                    <td>Other</td>
+                    <td>20/12/2023</td>
+                    <td>We want to make a trip for all our employees to the museum.</td>
                     <td><button class="contact-button-yes" type="submit">Yes</button></td>
                     <td><button class="contact-button-no" type="submit">No</button></td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Youssef Farghaly</td>
-                    <td>fergie696@hotmail.com</td>
-                    <td>Can I purchase tickets on the gate instead of online</td>
+                    <td>Wayne Enterprise</td>
+                    <td>Bruce Wayne</td>
+                    <td>bruce@wayne.com</td>
+                    <td>Cermony</td>
+                    <td>20/12/2023</td>
+                    <td>We want to host a cermony because we defeated The Joker.</td>
                     <td><button class="contact-button-yes" type="submit">Yes</button></td>
                     <td><button class="contact-button-no" type="submit">No</button></td>
                 </tr>
                 <tr>
                     <td>4</td>
+                    <td>Vogue</td>
                     <td>Anne Hathaway</td>
                     <td>anne.hathway@gmail.com</td>
-                    <td>Is there a discount for Kanye West fans</td>
+                    <td>Concert</td>
+                    <td>20/12/2023</td>
+                    <td>We want to host a concert where we will introduce our winter collection.</td>
                     <td><button class="contact-button-yes" type="submit">Yes</button></td>
                     <td><button class="contact-button-no" type="submit">No</button></td>
                 </tr>
@@ -78,7 +93,7 @@
         <p>
 
         <form class="faq-form" method="get" action="backend-submitted.html">
-            <b><label class="faq-form-label" for="id">Enquiry ID:</label></b>
+            <b><label class="faq-form-label" for="id">Event ID:</label></b>
             <br>
             <input class="faq-form-input" type="number" min="1" max="4" id="id" name="id" required>
             <br><br>
