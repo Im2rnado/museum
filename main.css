@@ -97,6 +97,7 @@ hr {
 }
 
 footer {
+  border: 2px #F6EECF solid;
   background-color: #111739;
   font-size: x-large;
   padding: 10px;
@@ -197,7 +198,7 @@ footer input {
 
 .about-sub {
   font-style: oblique;
-  font-size: x-large;
+  font-size: xx-large;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #111739;
   padding-left: 5%;
@@ -557,16 +558,24 @@ footer input {
 }
 
 .location-map {
-  width: 60%;
+  width: 50%;
   height: 60%;
   float: right;
   margin-top: 10px;
   margin-right: 5%;
 }
 
-.location-map .about {
+.location-map .iframe {
+  width: 80%;
+  height: 60%;
+  float: right;
+  margin-top: 10px;
+  margin-right: 5%;
+}
+
+.location-map .maintitle {
   margin-bottom: 10px;
-  margin-left: 25%
+  margin-left: 5%
 }
 
 .founders {
@@ -585,8 +594,27 @@ footer input {
   padding-right: 30px;
 }
 
-.ec-td {
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 50%;
+.center-image {
+  width: 130%;
+  margin: 20px 0;
+}
+
+.blog-td {
+  border: 2px #111739 solid;
+}
+
+.blog-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin-bottom: 50px;
+  border-spacing: 10px 0px;
+}
+
+.blog-names {
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #111739;
+  text-align: center;
+  text-decoration: none;
 }
