@@ -106,6 +106,7 @@ footer {
   font-size: x-large;
   padding: 10px;
   text-align: center;
+  margin-top: 20px;
   height: 240px;
   color: #F6EECF;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -119,12 +120,6 @@ footer input {
 
 .subscribe {
   margin-right: 12px;
-}
-
-.subscribe-button {
-  width: 175px;
-  height: 50px;
-  background-color: rgb(243, 236, 223);
 }
 
 .iframe {
@@ -147,26 +142,9 @@ footer input {
   font-weight: bold;
 }
 
-.maindesc {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #111739;
-  display: flex;
-  justify-content: center;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
 .center {
   display: flex;
   justify-content: center;
-}
-
-.h2c {
-  text-align: center;
-}
-
-.header {
-  text-align: left;
 }
 
 .images {
@@ -181,11 +159,6 @@ footer input {
 .image {
   width: 25%;
   margin: 10px;
-}
-
-.blocksub {
-  text-align: left;
-  font-weight: 400;
 }
 
 .about {
@@ -211,16 +184,6 @@ footer input {
   text-align: justify;
   padding-left: 5%;
   padding-right: 5%;
-}
-
-.table {
-  margin-top: 50px;
-  margin-right: 5%;
-  margin-bottom: 50px;
-}
-
-.history-table {
-  border-spacing: 0 50px;
 }
 
 .history-image {
@@ -464,32 +427,6 @@ footer input {
   padding: 8px;
 }
 
-.accounts-button {
-  font-size: medium;
-  width: 100%;
-  background-color: #111739;
-  color: red;
-  border: none;
-  cursor: pointer;
-}
-
-.accounts-button:hover {
-  background-color: red;
-  color: #111739;
-}
-
-.backend-table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.backend-table td {
-  padding: 10px;
-}
-
 .backend-image {
   padding-left: 5%;
   width: 100%
@@ -581,23 +518,6 @@ footer input {
 .inquire-partner .maintitle {
   margin-top: 0px;
   padding-right: 30px;
-}
-
-.center-image {
-  width: 130%;
-  margin: 20px 0;
-}
-
-.blog-td {
-  border: 2px #111739 solid;
-}
-
-.blog-table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  margin-bottom: 50px;
-  border-spacing: 10px 0px;
 }
 
 .blog-names {
@@ -696,28 +616,6 @@ footer input {
   margin-bottom: 0px;
 }
 
-.tbl {
-  width: 90%;
-  align-content: justify;
-  margin-left: 50pt;
-  padding: 10px;
-  border: 5px #111739 solid;
-}
-
-.tbl td {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  border: 0.5px #111739 solid;
-}
-
-.tbl h2 {
-  text-align: center;
-}
-
-.tbl .bio {
-  font-size: large;
-  text-align: center;
-}
-
 .events-table {
   width: 80%;
   margin-left: 15%;
@@ -814,78 +712,17 @@ footer input {
   font-size: large;
 }
 
-#Proceedtopayment {
-  width: 250px;
-  height: 50px;
-}
-
-/*donation form CSS*/
-
-.dontable td {
-  width: fit-content;
-  height: fit-content;
-  font-size: larger;
-}
-
-.dontable {
-  margin: auto;
-  padding: auto;
-}
-
-.donationtitle {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: xx-large;
-}
-
-.donationsubtitle {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: x-large;
-}
-
-.dontable select {
-  width: 250px;
-  height: 50px;
-  font-size: 20px;
-}
-
-.dontable input {
-  background-color: #F6EECF;
-  width: 500px;
-  height: 50px;
-  font-size: 20px;
-}
-
-#securepay {
-  width: 200px;
-  height: 50px;
-  margin: 5px;
-}
-
-.donationcontainer {
-  background-color: #F6EECF;
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 20px;
-  padding: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: larger;
-}
-
-.dontable textarea {
-  font-size: 20px;
-}
-
 /*items description quantity page*/
-.itemdes1 img {
-  width: 120%
-}
 
 .itemdes1 {
   padding-right: 45px;
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 10%;
+}
+
+.itemdes1 img {
+  width: 120%
 }
 
 .itemdes2 {
@@ -900,27 +737,9 @@ footer input {
   width: 50%;
 }
 
-#Addtocart {
-  height: 50px;
-  width: 120px;
-  background-color: #F6EECF;
-}
-
-#Proceed {
-  height: 50px;
-  width: 150px;
-  background-color: #F6EECF;
-}
-
 #Quantity {
   height: 50px;
   width: 70px;
-  background-color: #F6EECF;
-}
-
-#Continueshopping {
-  height: 50px;
-  width: 150px;
   background-color: #F6EECF;
 }
 
@@ -947,68 +766,10 @@ footer input {
   padding: 10px;
 }
 
-.create-order-donation-table {
-  width: 30%;
-  margin: auto;
-  font-size: large;
-  border: #000000 2px solid;
-  border-collapse: collapse;
-}
-
-.create-order-donation-table td {
-  border: #000000 2px solid;
-  border-collapse: collapse;
-}
-
 .backend-donation-chart img {
   margin-left: 30%;
   width: 40%;
   margin-bottom: 3%;
-}
-
-
-/*creditcard page*/
-
-.creditcard form input {
-  font-size: large;
-}
-
-.creditcard table {
-  margin: auto;
-  border: black 2px solid;
-  width: fit-content;
-  background-color: #F6EECF;
-  font-size: larger;
-}
-
-.creditcard {
-  padding-top: 50px;
-  padding-bottom: 5px;
-}
-
-/*Payment completed page*/
-
-.paymentcompleted table {
-  margin: auto;
-  text-align: center;
-  width: fit-content;
-  background-color: #F6EECF;
-  font-size: larger;
-}
-
-.paymentcompleted {
-  padding-top: 50px;
-  padding-bottom: 5px;
-}
-
-#homepage {
-  background-color: #45a049;
-  font-size: large;
-}
-
-/*Payment completed page END*/
-.centerbutton {
-  text-align: center;
 }
 
 /*main shop pages*/
@@ -1049,10 +810,6 @@ footer input {
 
 
 /* after mid term */
-
-footer {
-  margin-top: 20px;
-}
 
 .about-div {
   display: flex;
