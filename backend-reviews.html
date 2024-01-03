@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="author" content="Web Crafters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body class="body">
@@ -30,7 +32,7 @@
         <p>
 
         <form method="get" action="backend-reviews.html">
-            <table class="accounts-table">
+            <table id="reviews-table" class="accounts-table">
                 <tr>
                     <th>Name</th>
                     <th>Rating</th>
@@ -43,7 +45,7 @@
                     <td>⭐⭐⭐⭐⭐</td>
                     <td>I loved the museum. It was great and it seems like the designs were inspired by Kanye West</td>
                     <td>21/01/2023</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteReview(this.parentNode.parentNode)" type="submit">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Adriana Lima</td>
@@ -51,14 +53,14 @@
                     <td>The artifacts were so good. Overall a great experience but the food at the cafe wasn't the best
                     </td>
                     <td>09/07/2023</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteReview(this.parentNode.parentNode)" type="submit">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Mohamed Shabrawy</td>
                     <td>⭐⭐⭐⭐⭐</td>
                     <td><i>No comment</i></td>
                     <td>30/10/2023</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteReview(this.parentNode.parentNode)" type="submit">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Julia Fox</td>
@@ -69,7 +71,7 @@
                         tour
                         for me. SMH</td>
                     <td>02/11/2023</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteReview(this.parentNode.parentNode)" type="submit">Delete</button></td>
                 </tr>
             </table>
         </form>
@@ -80,17 +82,17 @@
         <form class="faq-form" method="get" action="backend-submitted.html">
             <b><label class="faq-form-label" for="name">Name:</label></b>
             <br>
-            <input class="faq-form-input" type="text" id="name" name="name" required>
+            <input class="faq-form-input" type="text" id="userName" name="name" required>
             <br><br>
 
             <b><label class="faq-form-label" for="rating">Rating:</label></b>
             <br>
             <select class="faq-form-input" id="rating" name="rating" required>
-                <option class="faq-content" value="5">⭐⭐⭐⭐⭐</option>
-                <option class="faq-content" value="4">⭐⭐⭐⭐</option>
-                <option class="faq-content" value="3">⭐⭐⭐</option>
-                <option class="faq-content" value="2">⭐⭐</option>
-                <option class="faq-content" value="1">⭐</option>
+                <option class="faq-content" value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                <option class="faq-content" value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                <option class="faq-content" value="⭐⭐⭐">⭐⭐⭐</option>
+                <option class="faq-content" value="⭐⭐">⭐⭐</option>
+                <option class="faq-content" value="⭐">⭐</option>
             </select>
             <br><br>
 
@@ -99,8 +101,8 @@
             <textarea class="faq-form-question" id="comment" name="comment" rows="5"></textarea>
             <br><br>
 
-            <button class="form-button" type="submit">Submit</button>
-            
+            <button class="form-button" onclick="return submitReview()" type="submit">Submit</button>
+
         </form>
     </div>
 

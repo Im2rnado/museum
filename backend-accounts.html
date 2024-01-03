@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="author" content="Web Crafters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body class="body">
@@ -30,7 +32,7 @@
         <p>
 
         <form method="get" action="backend-accounts.html">
-            <table class="accounts-table">
+            <table id="accounts-table" class="accounts-table">
                 <tr>
                     <th>Name</th>
                     <th>Email</th>
@@ -45,7 +47,7 @@
                     <td>01550447237</td>
                     <td>Male</td>
                     <td>16</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteAccount(this.parentNode.parentNode)" type="submit">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Adriana Lima</td>
@@ -53,7 +55,7 @@
                     <td>01091827384</td>
                     <td>Female</td>
                     <td>43</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteAccount(this.parentNode.parentNode)"  type="submit">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Kanye West</td>
@@ -61,7 +63,7 @@
                     <td>01283748910</td>
                     <td>Male</td>
                     <td>48</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteAccount(this.parentNode.parentNode)"  type="submit">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Ana de Armas</td>
@@ -69,7 +71,7 @@
                     <td>0102050350</td>
                     <td>Female</td>
                     <td>29</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteAccount(this.parentNode.parentNode)"  type="submit">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Donald Glover</td>
@@ -77,7 +79,7 @@
                     <td>01114444100</td>
                     <td>Male</td>
                     <td>40</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteAccount(this.parentNode.parentNode)"  type="submit">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Mohamed Ehab</td>
@@ -85,7 +87,7 @@
                     <td>0123232399</td>
                     <td>Male</td>
                     <td>20</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteAccount(this.parentNode.parentNode)"  type="submit">Delete</button></td>
                 </tr>
                 <tr>
                     <td>Kendall Roy</td>
@@ -93,7 +95,7 @@
                     <td>01198799234</td>
                     <td>Male</td>
                     <td>33</td>
-                    <td><button class="contact-button-no" type="submit">Delete</button></td>
+                    <td><button class="contact-button-no" onclick="return deleteAccount(this.parentNode.parentNode)"  type="submit">Delete</button></td>
                 </tr>
             </table>
 
@@ -105,7 +107,7 @@
         <form class="faq-form" method="get" action="backend-submitted.html">
             <b><label class="faq-form-label" for="name">Name:</label></b>
             <br>
-            <input class="faq-form-input" type="text" id="name" name="name" required>
+            <input class="faq-form-input" type="text" id="userName" name="name" required>
             <br><br>
 
             <b><label class="faq-form-label" for="email">Email:</label></b>
@@ -119,22 +121,23 @@
             <br><br>
 
             <b><label class="faq-form-label" for="gender">Gender:</label></b>
+            <input type="radio" id="male" name="gender" value="Male" required> <label class="faq-form-radio" id="male"
+                for="gender">Male</label>
             <br>
-            <br>
-            <input class="faq-form-label" type="radio" id="male" name="gender" value="Male" required> <label
-                class="faq-form-label" for="gender">Male</label>
-            <br>
-            <br>
-            <input class="faq-form-label" type="radio" id="female" name="gender" value="Female" required> <label
-                class="faq-form-label" for="gender">Female</label>
-            <br><br>
+            <input type="radio" id="female" name="gender" value="Female" required> <label class="faq-form-radio" id="female"
+                for="gender">Female</label>
 
             <b><label class="faq-form-label" for="age">Age:</label></b>
             <br>
-            <input class="faq-form-input" type="number" min="1" max="90" id="age" name="age" required>
+            <input class="faq-form-input" type="number" min="10" max="99" id="age" name="age" required>
             <br><br>
 
-            <button class="form-button" type="submit">Submit</button>
+            <b><label class="faq-form-label" for="password">Password:</label></b>
+            <br>
+            <input class="faq-form-input" type="password" id="password" name="password" required>
+            <br><br>
+
+            <button class="form-button" onclick="return backendSignup()" type="submit">Submit</button>
 
         </form>
     </div>

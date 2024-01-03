@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="author" content="Web Crafters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body class="body">
@@ -68,7 +70,7 @@
     <p class="maintitle">Reviews</p>
 
     <form method="get" action="#apply">
-        <table class="careers-table">
+        <table class="careers-table" id="reviews-table">
             <tr>
                 <th>Name</th>
                 <th>Rating</th>
@@ -107,10 +109,10 @@
     <p class="maintitle">Add a review</p>
     <br>
 
-    <form id="apply" class="faq-form" method="get" action="submitted.html">
+    <form id="apply" class="faq-form" method="get" action="#reviews-table">
         <b><label class="faq-form-label" for="name">Name:</label></b>
         <br>
-        <input class="faq-form-input" type="text" id="name" name="name" required>
+        <input class="faq-form-input" type="text" id="userName" name="name" required>
         <br><br>
 
         <b><label class="faq-form-label" for="email">Email:</label></b>
@@ -121,11 +123,11 @@
         <b><label class="faq-form-label" for="rating">Rating:</label></b>
         <br>
         <select class="faq-form-input" id="rating" name="rating" required>
-            <option class="faq-content" value="5">⭐⭐⭐⭐⭐</option>
-            <option class="faq-content" value="4">⭐⭐⭐⭐</option>
-            <option class="faq-content" value="3">⭐⭐⭐</option>
-            <option class="faq-content" value="2">⭐⭐</option>
-            <option class="faq-content" value="1">⭐</option>
+            <option class="faq-content" value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+            <option class="faq-content" value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+            <option class="faq-content" value="⭐⭐⭐">⭐⭐⭐</option>
+            <option class="faq-content" value="⭐⭐">⭐⭐</option>
+            <option class="faq-content" value="⭐">⭐</option>
         </select>
         <br><br>
 
@@ -134,14 +136,14 @@
         <textarea class="faq-form-question" id="comment" name="comment" rows="5"></textarea>
         <br><br>
 
-        <button class="form-button" type="submit">Submit</button>
+        <button class="form-button" onclick="return addReview()" type="submit">Submit</button>
 
     </form>
 
     <footer>
         <form>Enter your email address to subscibe to our newsletter
-            <input class="subscribe" id="email" name="email" type="email"><button class="form-button" id="subscribe"
-                type="submit">Subscribe</button>
+            <input class="subscribe" id="newsletterEmail" name=" email" type="email"><button class="form-button"
+                id="subscribe" onclick="newsletter()" type="submit">Subscribe</button>
         </form>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.96467018058!2d31.248246!3d30.00841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458476863e39e8f%3A0xc2e058446f8f145d!2sThe%20National%20Museum%20of%20Egyptian%20Civilization!5e0!3m2!1sen!2seg!4v1699299103548!5m2!1sen!2seg"

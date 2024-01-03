@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="author" content="Web Crafters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body class="body">
@@ -68,124 +70,123 @@
     <p class="maintitle">Shop Payment</p>
     <br>
 
-    <div class="bill">
-        <table>
-            <tr>
-                <td><b>Item</b></td>
-                <td><b>Price</b></td>
-            </tr>
-            <tr>
-                <td>Product 1</td>
-                <td class="p">1000 L.E.</td>
-            </tr>
-            <tr>
-                <td>Product 2</td>
-                <td class="p">500 L.E.</td>
-            </tr>
-            <tr>
-                <td>Product 3</td>
-                <td class="p">1500 L.E.</td>
-            </tr>
-            <tr>
-                <td>Shipping</td>
-                <td class="p">850 L.E.</td>
-            </tr>
-            <tr>
-                <td><b>Order Total</b></td>
-                <td class="p">3850 L.E.</td>
-            </tr>
-        </table>
-    </div>
+    <div class="about-div">
+        <div class="paymentform">
+            <form method="get" action="creditcardpay.html">
+                <table class="paymentformtable">
+                    <tr>
+                        <td colspan="2">
+                            <p><b>Billing Info</b></p>
+                        </td>
+                    </tr>
 
-    <div class="paymentform">
-        <Form method="get" action="creditcardpay.html">
-            <table class="paymentformtable">
-                <tr>
-                    <td colspan="2">
-                        <p><b>Billing Info</b></p>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>
+                            <lable for="Title">Title:</lable>
+                        </td>
+                        <td>
 
-                <tr>
-                    <td>
-                        <lable for="Title">Title:</lable>
-                    </td>
-                    <td>
+                            <select name="Title" id="Title" required>
+                                <option>Mr</option>
+                                <option>Ms</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Name">Full name:</label></td>
+                        <td>
+                            <input id="fullName" name="Name" type="text" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Email:</label></td>
+                        <td>
+                            <input type="email" id="Email" name="Email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="Tel">Phone Number:</lable>
+                        </td>
+                        <td>
+                            <input type="tel" id="Tel" name="Tel" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Country">Country:</label></td>
+                        <td>
+                            <input id="country" name="Country" type="text" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="City">City:</label></td>
+                        <td>
+                            <input id="city" name="City" type="text" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="postcode">Postal Code (optional):</label></td>
+                        <td>
+                            <input id="postcode" name="postcode" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td>
+                            <input id="address" name="address" type="text" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 50px;">
+                            <p><b>Shipping Method</b></p>
+                            <input id="checkbox1" name="radio" type="radio">Pickup from store
+                            <input id="checkbox2" name="radio" type="radio">Shipping in Egypt
+                            <input id="checkbox3" name="radio" type="radio">Shipping Worldwide
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button class="form-button" onclick="return validateShopPayment()" type="submit">Continue to Payment</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
 
-                        <select name="Title" id="Title" required>
-
-                            <option>Mr</option>
-                            <option>Ms</option>
-                        </select>
-                    </td>
+        <div class="bill">
+            <table>
+                <tr>
+                    <td><b>Item</b></td>
+                    <td><b>Price</b></td>
                 </tr>
                 <tr>
-                    <td><label for="Name">Full name:</label></td>
-                    <td>
-                        <input id="Name" name="Name" type="text" required>
-                    </td>
+                    <td>Product 1</td>
+                    <td class="p">1000 L.E.</td>
                 </tr>
                 <tr>
-                    <td><label for="Email">Email:</label></td>
-                    <td>
-                        <input type="email" id="Email" name="Email" required>
-                    </td>
+                    <td>Product 2</td>
+                    <td class="p">500 L.E.</td>
                 </tr>
                 <tr>
-                    <td>
-                        <lable for="Tel">Telephone:</lable>
-                    </td>
-                    <td>
-                        <input type="tel" id="Tel" name="Tel" required>
-                    </td>
+                    <td>Product 3</td>
+                    <td class="p">1500 L.E.</td>
                 </tr>
                 <tr>
-                    <td><label for="Country">Country:</label></td>
-                    <td>
-                        <input id="Country" name="Country" type="text" required>
-                    </td>
+                    <td>Shipping</td>
+                    <td class="p">850 L.E.</td>
                 </tr>
                 <tr>
-                    <td><label for="City">City:</label></td>
-                    <td>
-                        <input id="City" name="City" type="text" required>
-                    </td>
+                    <td><b>Order Total</b></td>
+                    <td class="p">3850 L.E.</td>
                 </tr>
-                <tr>
-                    <td><label for="postcode">Zip/Postal Code:</label></td>
-                    <td>
-                        <input id="postcode" name="postcode" type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="address">Address:</label></td>
-                    <td>
-                        <input id="address" name="address" type="text" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="height: 50px;">
-                        <p><b>Shipping Method</b></p>
-                        <input id="checkbox" name="radio" type="radio">Pickup from store
-                        <input id="checkbox" name="radio" type="radio">Shipping in Egypt
-                        <input id="checkbox" name="radio" type="radio">Shipping Worldwide
-
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center;">
-                        <button class="form-button" type="submit">Continue to Payment</button>
-                    </td>
-                </tr>
-
             </table>
-        </form>
+        </div>
     </div>
 
     <footer>
         <form>Enter your email address to subscibe to our newsletter
-            <input class="subscribe" id="email" name="email" type="email"><button class="form-button" id="subscribe"
-                type="submit">Subscribe</button>
+            <input class="subscribe" id="newsletterEmail" name=" email" type="email"><button class="form-button"
+                id="subscribe" onclick="newsletter()" type="submit">Subscribe</button>
         </form>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.96467018058!2d31.248246!3d30.00841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458476863e39e8f%3A0xc2e058446f8f145d!2sThe%20National%20Museum%20of%20Egyptian%20Civilization!5e0!3m2!1sen!2seg!4v1699299103548!5m2!1sen!2seg"

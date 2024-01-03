@@ -3,8 +3,10 @@
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="author" content="Web Crafters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body class="body">
@@ -66,60 +68,48 @@
     <p class="maintitle">Blogs</p>
     <br>
 
-    <table class="blog-table">
-        <tr class="blog-tr">
-            <td class="blog-td">
-                <a href="clepsydra.html"><img draggable="false" class="history-image" src="assets/clepsydra.png"
-                        alt="clepsydra"></a>
-            </td>
+    <div class="blog-container">
+        <div class="blog-item">
+            <a href="clepsydra.html"><img draggable="false" class="history-image" src="assets/clepsydra.png"
+                    alt="clepsydra"></a>
+            <hr>
+            <a class="blog-names" href="clepsydra.html">
+                <p>Clepsydra</p>
+            </a>
+        </div>
 
-            <td class="blog-td">
-                <a href="mosque-lamps.html"><img draggable="false" class="history-image" src="assets/islamic-vase.png"
-                        alt="islamic-vase"></a>
-            </td>
+        <div class="blog-item">
+            <a href="mosque-lamps.html"><img draggable="false" class="history-image" src="assets/islamic-vase.png"
+                    alt="islamic-vase"></a>
+            <hr>
+            <a class="blog-names" href="mosque-lamps.html">
+                <p>Mosque Lamps</p>
+            </a>
+        </div>
 
-            <td class="blog-td">
-                <a href="khedive.html"><img draggable="false" class="history-image" src="assets/khedive.png"
-                        alt="statue"></a>
-            </td>
+        <div class="blog-item">
+            <a href="khedive.html"><img draggable="false" class="history-image" src="assets/khedive.png"
+                    alt="statue"></a>
+            <hr>
+            <a class="blog-names" href="khedive.html">
+                <p>Khedive Ismail</p>
+            </a>
+        </div>
 
-            <td class="blog-td">
-                <a href="artifacts.html"><img draggable="false" class="history-image" src="assets/coffin.png"
-                        alt="statue"></a>
-            </td>
-        </tr>
-
-        <tr class="blog-tr">
-            <td class="blog-td">
-                <a class="blog-names" href="clepsydra.html">
-                    <p>Clepsydra</p>
-                </a>
-            </td>
-
-            <td class="blog-td">
-                <a class="blog-names" href="mosque-lamps.html">
-                    <p>Mosque Lamps</p>
-                </a>
-            </td>
-
-            <td class="blog-td">
-                <a class="blog-names" href="khedive.html">
-                    <p>Khedive Ismail</p>
-                </a>
-            </td>
-
-            <td class="blog-td">
-                <a class="blog-names" href="khedive.html">
-                    <p>Artifacts</p>
-                </a>
-            </td>
-        </tr>
-    </table>
+        <div class="blog-item">
+            <a href="artifacts.html"><img draggable="false" class="history-image" src="assets/coffin.png"
+                    alt="statue"></a>
+            <hr>
+            <a class="blog-names" href="khedive.html">
+                <p>Artifacts</p>
+            </a>
+        </div>
+    </div>
 
     <footer>
         <form>Enter your email address to subscibe to our newsletter
-            <input class="subscribe" id="email" name="email" type="email"><button class="form-button" id="subscribe"
-                type="submit">Subscribe</button>
+            <input class="subscribe" id="newsletterEmail" name=" email" type="email"><button class="form-button"
+                id="subscribe" onclick="newsletter()" type="submit">Subscribe</button>
         </form>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.96467018058!2d31.248246!3d30.00841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458476863e39e8f%3A0xc2e058446f8f145d!2sThe%20National%20Museum%20of%20Egyptian%20Civilization!5e0!3m2!1sen!2seg!4v1699299103548!5m2!1sen!2seg"

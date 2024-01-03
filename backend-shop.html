@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="author" content="Web Crafters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
+    <script src="shop.js" type="text/javascript"></script>
 </head>
 
 <body class="body">
@@ -28,7 +31,7 @@
     <p class="backend-titles">Shop
     <p>
 
-    <table class="events-table">
+    <table class="events-table" id="shoptable">
         <tr>
             <th>Order ID</th>
             <th>Product ID</th>
@@ -40,153 +43,92 @@
             <th>Address</th>
             <th>Payment Status</th>
             <th>Order Status</th>
-
         </tr>
         <tr>
             <td>1</td>
             <td>t100</td>
-            <td>09/08/2023 <br> 07:31</td>
+            <td>2023-12-19</td>
             <td>Kanye West</td>
             <td>1</td>
             <td>Grey</td>
             <td>L.E. 3,500</td>
             <td>USA</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment Done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                    <option>Refunded</option>
-                </select></td>
-            <td><select name="Orderstatus" id="Orderstatus">
-                    <option>Delivered</option>
-                    <option>Shipped</option>
-                    <option>Cancelled</option>
-                    <option>Waiting for Payment</option>
-                    <option>Waiting for Pick Up</option>
-                </select></td>
-
+            <td>Payment Done</td>
+            <td>Delivered</td>
         </tr>
         <tr>
             <td>2</td>
             <td>t200</td>
-            <td>05/07/2023 <br> 07:31</td>
+            <td>2023-07-09</td>
             <td>Yassin Bedier</td>
             <td>1</td>
             <td>Black</td>
             <td>L.E. 5,000</td>
             <td>Egypt</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment Done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                    <option>Refunded</option>
-                </select></td>
-            <td><select name="Orderstatus" id="Orderstatus">
-                    <option>Delivered</option>
-                    <option>Shipped</option>
-                    <option>Cancelled</option>
-                    <option>Waiting for Payment</option>
-                    <option>Waiting for Pick Up</option>
-                </select></td>
-
+            <td>Payment Done</td>
+            <td>Delivered</td>
         </tr>
         <tr>
             <td>3</td>
             <td>c100</td>
-            <td>04/07/2023 <br> 05:31</td>
+            <td>2023-09-14</td>
             <td>Giorgio Armani</td>
             <td>2</td>
             <td>Red</td>
             <td>L.E. 7,500</td>
             <td>Italy</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment Done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                    <option>Refunded</option>
-                </select></td>
-            <td><select name="Orderstatus" id="Orderstatus">
-                    <option>Delivered</option>
-                    <option>Shipped</option>
-                    <option>Cancelled</option>
-                    <option>Waiting for Payment</option>
-                    <option>Waiting for Pick Up</option>
-                </select></td>
-
+            <td>Payment Done</td>
+            <td>Delivered</td>
         </tr>
         <tr>
             <td>4</td>
             <td>c300</td>
-            <td>05/07/2023 <br> 09:31</td>
+            <td>2023-11-19</td>
             <td>Thierry Hermes</td>
             <td>1</td>
             <td>Blue</td>
             <td>L.E. 1,000</td>
             <td>Germany</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment Done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                    <option>Refunded</option>
-                </select></td>
-            <td><select name="Orderstatus" id="Orderstatus">
-                    <option>Delivered</option>
-                    <option>Shipped</option>
-                    <option>Cancelled</option>
-                    <option>Waiting for Payment</option>
-                    <option>Waiting for Pick Up</option>
-                </select></td>
-
+            <td>Payment Done</td>
+            <td>Delivered</td>
         </tr>
         <tr>
             <td>5</td>
             <td>j100</td>
-            <td>04/06/2023 <br> 07:41</td>
+            <td>2023-12-16</td>
             <td>Virgil Abloh</td>
             <td>1</td>
             <td>White</td>
             <td>L.E. 5,000</td>
             <td>USA</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment Done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                    <option>Refunded</option>
-                </select></td>
-            <td><select name="Orderstatus" id="Orderstatus">
-                    <option>Delivered</option>
-                    <option>Shipped</option>
-                    <option>Cancelled</option>
-                    <option>Waiting for Payment</option>
-                    <option>Waiting for Pick Up</option>
-                </select></td>
-
+            <td>Payment Done</td>
+            <td>Delivered</td>
         </tr>
     </table>
     <br>
 
-    <div class="backend-order-chart">
-        <img src="assets/orderschart.png">
-        <img src="assets/sales.png">
-    </div>
-
-    <p class="backend-titles">Create Order Manually
+    <p class="backend-titles">Edit Orders
     <p>
 
-    <form class="faq-form" method="get" action="backend-submitted.html">
-        <b><label class="faq-form-label" for="name">Customer Name:</label></b>
+    <form class="faq-form" method="get">
+        <b><label class="faq-form-label" for="orderID">Order ID:</label></b>
         <br>
-        <input class="faq-form-input" type="text" id="name" name="name" required>
+        <input class="faq-form-input" type="text" id="orderID" name="orderID" required>
         <br><br>
 
-        <b><label class="faq-form-label" for="id">Product ID:</label></b>
+        <b><label class="faq-form-label" for="productId">Product ID:</label></b>
         <br>
-        <input class="faq-form-input" type="text" id="id" name="id" required>
+        <input class="faq-form-input" type="text" id="productId" name="productId" required>
         <br><br>
 
-        <b><label class="faq-form-label" for="date">Date and Time:</label></b>
+        <b><label class="faq-form-label" for="orderDate">Date:</label></b>
         <br>
-        <input class="faq-form-input" type="datetime-local" id="date" name="date" required>
+        <input class="faq-form-input" type="date" id="orderDate" name="orderDate" required>
+        <br><br>
+
+        <b><label class="faq-form-label" for="customerName">Customer Name:</label></b>
+        <br>
+        <input class="faq-form-input" type="text" id="customerName" name="customerName" required>
         <br><br>
 
         <b><label class="faq-form-label" for="quantity">Quantity:</label></b>
@@ -196,43 +138,57 @@
 
         <b><label class="faq-form-label" for="color">Color:</label></b>
         <br>
-        <input class="faq-form-input" type="color" id="color" name="color" required>
+
+        <input class="faq-form-input" type="text" id="color" name="color" required>
         <br><br>
 
-        <b><label class="faq-form-label" for="amount">Total Price:</label></b>
+        <b><label class="faq-form-label" for="totalPrice">Total Price:</label></b>
         <br>
-        <input class="faq-form-input" type="text" id="amount" name="amount" required>
+
+        <input class="faq-form-input" type="text" id="totalPrice" name="totalPrice" required>
         <br><br>
 
-        <b><label class="faq-form-label" for="country">Address:</label></b>
+        <b><label class="faq-form-label" for="countryOrder">Address:</label></b>
         <br>
-        <input class="faq-form-input" type="text" id="country" name="country" required>
+        <input class="faq-form-input" type="text" id="countryOrder" name="countryOrder" required>
         <br><br>
 
-        <b><label class="faq-form-label" for="status">Payment Status:</label></b>
+        <b><label class="faq-form-label" for="shopPaymentStatus">Payment Status:</label></b>
         <br>
-        <select class="faq-form-input" id="status" name="status" required>
-            <option class="faq-content" value="done">Payment Done</option>
-            <option class="faq-content" value="error">Payment Error</option>
-            <option class="faq-content" value="proceeding">Proceeding Payment</option>
-            <option class="faq-content" value="proceeding">Refunded</option>
+
+        <select class="faq-form-input" id="shopPaymentStatus" name="shopPaymentStatus" required>
+            <option class="faq-content" value="Payment Done">Payment Done</option>
+            <option class="faq-content" value="Payment Error">Payment Error</option>
+            <option class="faq-content" value="Proceeding Payment">Proceeding Payment</option>
+            <option class="faq-content" value="Refunded">Refunded</option>
         </select>
         <br><br>
 
-        <b><label class="faq-form-label" for="status">Order Status:</label></b>
+        <b><label class="faq-form-label" for="orderStatus">Order Status:</label></b>
         <br>
-        <select class="faq-form-input" id="status" name="status" required>
-            <option class="faq-content" value="delivered">Delivered</option>
-            <option class="faq-content" value="shipped">Shipped</option>
-            <option class="faq-content" value="cancelled">Cancelled</option>
-            <option class="faq-content" value="proceeding">Waiting for Payment</option>
-            <option class="faq-content" value="pickup">Waiting for Pickup</option>
+
+        <select class="faq-form-input" id="orderStatus" name="orderStatus" required>
+            <option class="faq-content" value="Delivered">Delivered</option>
+            <option class="faq-content" value="Shipped">Shipped</option>
+            <option class="faq-content" value="Cancelled">Cancelled</option>
+            <option class="faq-content" value="Waiting for Payment">Waiting for Payment</option>
+            <option class="faq-content" value="Waiting for Pickup">Waiting for Pickup</option>
         </select>
         <br><br>
 
-        <button class="form-button" type="submit">Submit</button>
-        </table>
+
+        <button class="form-button" type="button" onclick="addNewRecordShop();">Add</button>
+        <br><br>
+        <button class="form-button" type="button" onclick="updateShopRecord();">Edit</button>
+        <br><br>
+        <button class="form-button" type="button" onclick="deleteShopRecord();">Remove</button>
+
     </form>
+
+    <div class="backend-order-chart">
+        <img src="assets/orderschart.png">
+        <img src="assets/sales.png">
+    </div>
 </body>
 
 </html>

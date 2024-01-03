@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="author" content="Web Crafters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body class="body">
@@ -71,13 +73,11 @@
     <form class="faq-form" method="get" action="creditcardpay.html">
         <b><label class="faq-form-label" for="group">Group Choice:</label></b>
         <br>
-        <br>
-        <input class="faq-form-label" type="radio" id="group1" name="group" value="group1" required> <label
-            class="faq-form-label" for="group">Group 1</label>
-        <br>
-        <br>
-        <input class="faq-form-label" type="radio" id="group2" name="group" value="group2" required> <label
-            class="faq-form-label" for="group">Group 2</label>
+
+        <input type="radio" id="group1" name="group" value="group1" required> <label
+            class="faq-form-radio" for="group">Group 1</label>
+        <input  type="radio" id="group2" name="group" value="group2" required> <label
+            class="faq-form-radio" for="group">Group 2</label>
         <br><br><br>
 
         <b><label class="faq-form-label" for="phone">Phone Number:</label></b>
@@ -104,11 +104,11 @@
         </select>
         <br><br>
 
-        <input class="faq-form-label" type="checkbox" name="terms" value="agree">
-        <label for="" class="login-label">I agree to the Course regulations.</label>
+        <input class="faq-form-radio" type="checkbox" id="agree" name="terms" value="agree">
+        <label for="agree" id="agree" class="login-label">I agree to the Course regulations.</label>
         <br>
 
-        <button class="form-button" type="submit">Procceed to Payment</button>
+        <button class="form-button" onclick="return validateReserveContinue()" type="submit">Procceed to Payment</button>
         <br>
         <br>
         <button class="contact-button-no" type="reset">Reset</button>
@@ -117,8 +117,8 @@
 
     <footer>
         <form>Enter your email address to subscibe to our newsletter
-            <input class="subscribe" id="email" name="email" type="email"><button class="form-button" id="subscribe"
-                type="submit">Subscribe</button>
+            <input class="subscribe" id="newsletterEmail" name=" email" type="email"><button class="form-button"
+                id="subscribe" onclick="newsletter()" type="submit">Subscribe</button>
         </form>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.96467018058!2d31.248246!3d30.00841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458476863e39e8f%3A0xc2e058446f8f145d!2sThe%20National%20Museum%20of%20Egyptian%20Civilization!5e0!3m2!1sen!2seg!4v1699299103548!5m2!1sen!2seg"

@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="author" content="Web Crafters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body class="body">
@@ -65,92 +67,80 @@
         </div>
     </div>
 
-    <div class="myaccount">
-        <p class="maintitle">My Account</p>
+    <div class="blog-container">
+        <div class="myaccount">
+            <p class="maintitle">My Account</p>
 
-        <form action="myaccount.html" method="get ">
-            <table class="myaccount-table">
+            <form action="myaccount.html" method="get ">
+                <table id="acctable" class="myaccount-table">
+                    <tr>
+                        <th>Name</th>
+                        <td>Yassin Bedier</td>
+                        <td id="name"><input type="text" id="_name" name="name"></td>
+                        <td><button class="contact-button-yes" onclick="return myaccount(this.parentNode.parentNode)"
+                                type="submit">Update Name</button></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>yassin.bedier@gmail.com</td>
+                        <td id="email"><input type="email" id="_email" name="email"></td>
+                        <td><button class="contact-button-yes" onclick="return myaccount(this.parentNode.parentNode)"
+                                type="submit">Update Email</button></td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number</th>
+                        <td>01550447237</td>
+                        <td id="phone"><input type="tel" id="_phone" name="phone"></td>
+                        <td><button class="contact-button-yes" onclick="return myaccount(this.parentNode.parentNode)"
+                                type="submit">Update Phone Number</button></td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td>16</td>
+                        <td id="age"><input type="number" min="10" max="99" id="_age" name="age"></td>
+                        <td><button class="contact-button-yes" onclick="return myaccount(this.parentNode.parentNode)"
+                                type="submit">Update Age</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="previous-stuff">
+            <p class="maintitle">Previous Tours</p>
+
+            <table class="previous-stuff-table">
                 <tr>
-                    <th>Name</th>
-                    <td>Yassin Bedier</td>
-                    <td><input type="text" id="name" name="name"></td>
-                    <td><button class="contact-button-yes" type="submit">Update Name</button></td>
+                    <th>Tour ID</th>
+                    <th>Date Went</th>
+                    <th>Time</th>
+                    <th>Tickets Bought</th>
                 </tr>
                 <tr>
-                    <th>Email</th>
-                    <td>yassin.bedier@gmail.com</td>
-                    <td><input type="email" id="email" name="email"></td>
-                    <td><button class="contact-button-yes" type="submit">Update Email</button></td>
+                    <td>69</td>
+                    <td>21/01/2023</td>
+                    <td>3pm-6pm</td>
+                    <td>2</td>
                 </tr>
                 <tr>
-                    <th>Phone Number</th>
-                    <td>01550447237</td>
-                    <td><input type="tel" id="phone" name="phone"></td>
-                    <td><button class="contact-button-yes" type="submit">Update Phone Number</button></td>
+                    <td>103</td>
+                    <td>05/05/2023</td>
+                    <td>3pm-6pm</td>
+                    <td>6</td>
                 </tr>
                 <tr>
-                    <th>Gender</th>
-                    <td>Male</td>
-                    <td><input class="faq-form-label" type="radio" id="male" name="gender" value="Male" checked> <label
-                            class="faq-form-label" for="gender">Male</label>
-                        <input class="faq-form-label" type="radio" id="female" name="gender" value="Female"> <label
-                            class="faq-form-label" for="gender">Female</label>
-                        <br><br>
-                    </td>
-                    <td><button class="contact-button-yes" type="submit">Update Gender</button></td>
-                </tr>
-                <tr>
-                    <th>Age</th>
-                    <td>16</td>
-                    <td><input type="number" min="1" max="90" id="age" name="age"></td>
-                    <td><button class="contact-button-yes" type="submit">Update Age</button></td>
+                    <td>210</td>
+                    <td>09/07/2023</td>
+                    <td>11am-2pm</td>
+                    <td>3</td>
                 </tr>
             </table>
-        </form>
-    </div>
-
-    <div class="previous-stuff">
-        <p class="maintitle">Previous Tours</p>
-
-        <table class="previous-stuff-table">
-            <tr>
-                <th>Tour ID</th>
-                <th>Date Went</th>
-                <th>Time</th>
-                <th>Tickets Bought</th>
-            </tr>
-            <tr>
-                <td>69</td>
-                <td>21/01/2023</td>
-                <td>3pm-6pm</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>103</td>
-                <td>05/05/2023</td>
-                <td>3pm-6pm</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>210</td>
-                <td>09/07/2023</td>
-                <td>11am-2pm</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>214</td>
-                <td>11/11/2023</td>
-                <td>1pm-4pm</td>
-                <td>1</td>
-            </tr>
-        </table>
-
+        </div>
     </div>
 
     <footer>
         <form>Enter your email address to subscibe to our newsletter
-            <input class="subscribe" id="email" name="email" type="email"><button class="form-button" id="subscribe"
-                type="submit">Subscribe</button>
+            <input class="subscribe" id="newsletterEmail" name=" email" type="email"><button class="form-button"
+                id="subscribe" onclick="newsletter()" type="submit">Subscribe</button>
         </form>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.96467018058!2d31.248246!3d30.00841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458476863e39e8f%3A0xc2e058446f8f145d!2sThe%20National%20Museum%20of%20Egyptian%20Civilization!5e0!3m2!1sen!2seg!4v1699299103548!5m2!1sen!2seg"

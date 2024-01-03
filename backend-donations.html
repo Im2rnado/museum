@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="description" content="museum egyptian civilization">
     <meta name="keywords" content="museum,egypt,civilization">
+    <meta name="author" content="Web Crafters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
+    <script src="donations.js" type="text/javascript"></script>
 </head>
 
 <body class="body">
@@ -28,115 +31,104 @@
     <p class="backend-titles">Donations
     <p>
 
-    <table class="accounts-table">
+    <table class="accounts-table" id="donationtable">
         <tr>
             <th>ID</th>
             <th>Donater</th>
             <th>Amount</th>
-            <th>Date and Time</th>
+            <th>Date</th>
             <th>Country</th>
             <th>Donation Status</th>
         </tr>
         <tr>
             <td>1</td>
             <td>Kanye West</td>
-            <td>$5,000</td>
-            <td>09/08/2023 <br> 07:31</td>
+            <td>$5000</td>
+            <td>2023-12-18</td>
             <td>Egypt</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                </select></td>
+            <td>Proceeding Payment</td>
         </tr>
         <tr>
             <td>2</td>
             <td>Zinedine Zidane</td>
             <td>$3500</td>
-            <td>05/07/2023 <br> 07:31</td>
+            <td>2023-11-15</td>
             <td>Germany</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                </select></td>
+            <td>Payment Done</td>
         </tr>
         <tr>
             <td>3</td>
             <td>LeBron</td>
             <td>$200</td>
-            <td>04/07/2023 <br> 05:31</td>
+            <td>2023-10-04</td>
             <td>USA</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                </select></td>
+            <td>Payment Done</td>
         </tr>
         <tr>
             <td>4</td>
             <td>Naomi Campbell</td>
             <td>$1000</td>
-            <td>05/07/2023 <br> 09:31</td>
+            <td>2023-08-08</td>
             <td>Egypt</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                </select></td>
+            <td>Proceeding Payment</td>
         </tr>
         <tr>
             <td>5</td>
             <td>Lando Norris</td>
             <td>$50</td>
-            <td>04/06/2023 <br> 07:41</td>
+            <td>2023-09-24</td>
             <td>UAE</td>
-            <td><select name="Paystatus" id="Paystatus">
-                    <option>Payment done</option>
-                    <option>Payment Error</option>
-                    <option>Proceeding Payment</option>
-                </select></td>
+            <td>Payment Error</td>
         </tr>
     </table>
 
-    <p class="backend-titles">Input Donation Manually
+    <p class="backend-titles">Control Donations
     <p>
 
-    <div><form class="faq-form" method="get" action="backend-submitted.html">
-        <b><label class="faq-form-label" for="name">Donator Name:</label></b>
-        <br>
-        <input class="faq-form-input" type="text" id="name" name="name" required>
-        <br><br>
+    <div>
+        <form class="faq-form" method="get" action="backend-submitted.html">
+            <b><label class="faq-form-label" for="donationID">Donation ID:</label></b>
+            <br>
+            <input class="faq-form-input" type="text" id="donationID" name="donationID" required>
+            <br><br>
+            <b><label class="faq-form-label" for="donatorName">Donator Name:</label></b>
+            <br>
+            <input class="faq-form-input" type="text" id="donatorName" name="donatorName" required>
+            <br><br>
 
-        <b><label class="faq-form-label" for="amount">Amount:</label></b>
-        <br>
-        <input class="faq-form-input" type="number" id="amount" name="amount" required>
-        <br><br>
+            <b><label class="faq-form-label" for="donationAmount">Amount:</label></b>
+            <br>
+            <input class="faq-form-input" type="text" id="donationAmount" name="donationAmount" required>
+            <br><br>
 
-        <b><label class="faq-form-label" for="date">Date and Time:</label></b>
-        <br>
-        <input class="faq-form-input" type="datetime-local" id="date" name="date" required>
-        <br><br>
+            <b><label class="faq-form-label" for="donationDate">Date:</label></b>
+            <br>
+            <input class="faq-form-input" type="date" id="donationDate" name="donationDate" required>
+            <br><br>
 
-        <b><label class="faq-form-label" for="country">Nationality:</label></b>
-        <br>
-        <input class="faq-form-input" type="text" id="country" name="country" required>
-        <br><br>
+            <b><label class="faq-form-label" for="donationCountry">Nationality:</label></b>
+            <br>
+            <input class="faq-form-input" type="text" id="donationCountry" name="donationCountry" required>
+            <br><br>
 
-        <b><label class="faq-form-label" for="status">Status:</label></b>
-        <br>
-        <select class="faq-form-input" id="status" name="status" required>
-            <option class="faq-content" value="done">Payment Done</option>
-            <option class="faq-content" value="error">Payment Error</option>
-            <option class="faq-content" value="proceeding">Proceeding Payment</option>
-        </select>
-        <br><br>
+            <b><label class="faq-form-label" for="donationStatus">Status:</label></b>
+            <br>
+            <select class="faq-form-input" id="donationStatus" name="donationStatus" required>
+                <option class="faq-content" value="Payment Done">Payment Done</option>
+                <option class="faq-content" value="Payment Error">Payment Error</option>
+                <option class="faq-content" value="Proceeding Payment">Proceeding Payment</option>
+            </select>
+            <br><br>
 
-        <button class="form-button" type="submit">Submit</button>
-        </table>
-    </form>
+            <button class="form-button" type="button" onclick="addNewdonationRecord();">Add</button>
+            <br><br>
+            <button class="form-button" type="button" onclick="updatedonationRecord();">Edit</button>
+            <br><br>
+            <button class="form-button" type="button" onclick="deleteDonationRecord();">Remove</button>
 
-    <div class="backend-donation-chart"><img src="assets/Donationchart.png"></div>
+        </form>
+
+        <div class="backend-donation-chart"><img src="assets/Donationchart.png"></div>
 </body>
 
 </html>
