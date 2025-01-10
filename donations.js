@@ -52,7 +52,6 @@ function checkEmptyInputDonation() {
 function selectedRowToInputDonation() {
     for (let i = 1; i < donationtable.rows.length; i++) {
         donationtable.rows[i].onclick = function () {
-            // get the seected row index
             donationrIndex = this.rowIndex;
             donationinput1.value = this.cells[0].innerHTML;
             donationinput2.value = this.cells[1].innerHTML;
@@ -67,7 +66,6 @@ function selectedRowToInputDonation() {
 }
 
 function addNewdonationRecord() {
-    // get the table by id                
     if (!checkEmptyInputDonation()) {
         let newRow = donationtable.insertRow(donationtable.length),
             cell1 = newRow.insertCell(0),
@@ -77,7 +75,6 @@ function addNewdonationRecord() {
             cell5 = newRow.insertCell(4),
             cell6 = newRow.insertCell(5);
 
-        // set the values into row cell's
         cell1.innerHTML = donationinput1.value;
         cell2.innerHTML = donationinput2.value;
         cell3.innerHTML = donationinput3.value;
@@ -101,7 +98,6 @@ function updatedonationRecord() {
 
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-
 }
 
 function deleteDonationRecord() {

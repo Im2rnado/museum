@@ -73,11 +73,10 @@ function checkEmptyInputShop() {
     return isEmpty;
 }
 
-// display selected row data into input text
 function selectedRowToInputShop() {
     for (let i = 1; i < shoptable.rows.length; i++) {
         shoptable.rows[i].onclick = function () {
-            // get the seected row index
+            
             shoprIndex = this.rowIndex;
             shopinput1.value = this.cells[0].innerHTML;
             shopinput2.value = this.cells[1].innerHTML;
@@ -95,11 +94,8 @@ function selectedRowToInputShop() {
     }
 }
 
-// add Row
-function addNewRecordShop() {
-    // get the table by id                
+function addNewRecordShop() {     
     if (!checkEmptyInputShop()) {
-        // create a new row and cells        
         let newRow = shoptable.insertRow(shoptable.length),
             cell1 = newRow.insertCell(0),
             cell2 = newRow.insertCell(1),
@@ -111,7 +107,7 @@ function addNewRecordShop() {
             cell8 = newRow.insertCell(7),
             cell9 = newRow.insertCell(8),
             cell10 = newRow.insertCell(9);
-        // set the values into row cell's
+
         cell1.innerHTML = shopinput1.value;
         cell2.innerHTML = shopinput2.value;
         cell3.innerHTML = shopinput3.value;
@@ -122,7 +118,7 @@ function addNewRecordShop() {
         cell8.innerHTML = shopinput8.value;
         cell9.innerHTML = shopinput9.value;
         cell10.innerHTML = shopinput10.value;
-        // call the function to set the event to the new row
+        
         selectedRowToInputShop();
 
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -150,7 +146,6 @@ function updateShopRecord() {
 function deleteShopRecord() {
     if (!checkEmptyInputShop()) {
         shoptable.deleteRow(shoprIndex);
-        // clear input text
         shopinput1.value = "";
         shopinput2.value = "";
         shopinput4.value = "";
